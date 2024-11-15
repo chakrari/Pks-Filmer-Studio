@@ -98,7 +98,7 @@ const Navbar = () => {
           Contact
         </Link>
       </div>
-      <button className="hidden md:flex gap-2 items-center border border-black px-6 py-2 rounded-lg hover:border-primary">
+      <button className="hidden md:flex gap-2 items-center border border-black px-6 py-2 rounded-lg hover:border-primary hover:bg-yellow-400">
         Smile Please
         <FaArrowRight />
       </button>

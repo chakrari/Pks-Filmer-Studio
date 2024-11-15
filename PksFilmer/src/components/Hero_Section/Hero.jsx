@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import AboutCard from "../../layouts/AboutCard";
-import abouts_1 from "../../assets/photo_for_website/abouts_1.png";
-import abouts_2 from "../../assets/photo_for_website/abouts_2.png";
-import abouts_3 from "../../assets/photo_for_website/abouts_3.png";
-import abouts_4 from "../../assets/photo_for_website/abouts_4.png";
-import abouts_5 from "../../assets/photo_for_website/abouts_5.png";
-import abouts_6 from "../../assets/photo_for_website/abouts_6.png";
-import abouts_7 from "../../assets/photo_for_website/abouts_7.png";
-import abouts_8 from "../../assets/photo_for_website/abouts_8.png";
+import HomeCard from "../../layouts/HomeCard";
+import home1 from "../../assets/Pks_Photos/PKs_Clean_Photos/Home/home1.jpg"
+import home2 from "../../assets/Pks_Photos/PKs_Clean_Photos/Home/home2.jpg"
+import home3 from "../../assets/Pks_Photos/PKs_Clean_Photos/Home/home3.jpg"
+import home4 from "../../assets/Pks_Photos/PKs_Clean_Photos/Home/home4.jpg"
+import home5 from "../../assets/Pks_Photos/PKs_Clean_Photos/Home/home5.jpg"
+import home6 from "../../assets/Pks_Photos/PKs_Clean_Photos/Home/home6.jpg"
+import home7 from "../../assets/Pks_Photos/PKs_Clean_Photos/Home/home7.jpg"
+import home8 from "../../assets/Pks_Photos/PKs_Clean_Photos/Home/home8.jpg"
 
 function handleClick () {}{
   console.log("Button clicked")
@@ -27,14 +27,14 @@ const Hero = () => {
         </p>
       </div>
       <div className="flex flex-wrap gap-2 justify-center">
-        <AboutCard img={abouts_1} />
-        <AboutCard img={abouts_2} />
-        <AboutCard img={abouts_3} />
-        <AboutCard img={abouts_4} />
-        <AboutCard img={abouts_5} />
-        <AboutCard img={abouts_6} />
-        <AboutCard img={abouts_7} />
-        <AboutCard img={abouts_8} />
+        <HomeCard img={home1} />
+        <HomeCard img={home2} />
+        <HomeCard img={home3} />
+        <HomeCard img={home4} />
+        <HomeCard img={home5} />
+        <HomeCard img={home6} />
+        <HomeCard img={home7} />
+        <HomeCard img={home8} />
       </div>
       <div className="text-left m-24 ">
         <h2 className="text-4xl font-bold mb-4 ">Why Choose Us?</h2>

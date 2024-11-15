@@ -1,14 +1,5 @@
 import React from "react";
-import AboutCard from "../../layouts/AboutCard";
-import about from "../../assets/photo_for_website/about.png";
-import abouts_1 from "../../assets/photo_for_website/abouts_1.png";
-import abouts_2 from "../../assets/photo_for_website/abouts_2.png";
-import abouts_3 from "../../assets/photo_for_website/abouts_3.png";
-import abouts_4 from "../../assets/photo_for_website/abouts_4.png";
-import abouts_5 from "../../assets/photo_for_website/abouts_5.png";
-import abouts_6 from "../../assets/photo_for_website/abouts_6.png";
-import abouts_7 from "../../assets/photo_for_website/abouts_7.png";
-import abouts_8 from "../../assets/photo_for_website/abouts_8.png";
+import aboutMain from "../../assets/Pks_Photos/PKs_Clean_Photos/About_Us/aboutMain.jpg";
 
 function About() {
   return (
@@ -18,10 +9,10 @@ function About() {
         <div
           className="absolute top-0 left-0 w-full"
           style={{
-            backgroundImage: `url(${about})`,
+            backgroundImage: `url(${aboutMain})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
-            height: "85vh", // Adjust as needed
+            height: "100vh", // Adjust as needed
             zIndex: -1,
           }}
         >
@@ -109,18 +100,6 @@ function About() {
             </p>
           </div>
         </div>
-      </div>
-
-      {/* Existing AboutCard Section */}
-      <div className="flex flex-wrap gap-2 justify-center">
-        <AboutCard img={abouts_1} />
-        <AboutCard img={abouts_2} />
-        <AboutCard img={abouts_3} />
-        <AboutCard img={abouts_4} />
-        <AboutCard img={abouts_5} />
-        <AboutCard img={abouts_6} />
-        <AboutCard img={abouts_7} />
-        <AboutCard img={abouts_8} />
       </div>
     </section>
   );

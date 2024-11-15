@@ -7,12 +7,15 @@ import Socialapps from "./components/Hero_Section/Socialapps";
 import About from "./components/About_us/About";
 import { CarouselProvider } from "./components/Carousel_compo/CarouselContext";
 
-import cr1 from "./assets/photo_for_website/cr1.jpg";
-import cr2 from "./assets/photo_for_website/cr2.jpg";
-import cr3 from "./assets/photo_for_website/cr3.jpg";
-import cr4 from "./assets/photo_for_website/cr4.jpg";
 
-const slides = [cr1, cr2, cr3, cr4];
+import carousel1 from "./assets/Pks_Photos/PKs_Clean_Photos/Carousel/carousel1.jpg"
+import carousel2 from "./assets/Pks_Photos/PKs_Clean_Photos/Carousel/carousel2.jpg"
+import carousel3 from "./assets/Pks_Photos/PKs_Clean_Photos/Carousel/carousel3.jpg"
+import carousel4 from "./assets/Pks_Photos/PKs_Clean_Photos/Carousel/carousel4.jpg"
+
+
+
+const slides = [carousel1, carousel2, carousel3, carousel4];
 
 const App = () => {
   return (
