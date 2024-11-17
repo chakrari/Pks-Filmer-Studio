@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar_compo/Navbar";
-import Carousel from "./components/Carousel_compo/Carousel";
-import Hero from "./components/Hero_Section/Hero";
-import Socialapps from "./components/Hero_Section/Socialapps";
-import About from "./components/About_us/About";
-import { CarouselProvider } from "./components/Carousel_compo/CarouselContext";
+import Navbar from "./components/Home_Page/Navbar_compo/Navbar";
+import Carousel from "./components/Home_Page/Carousel_compo/Carousel";
+import Hero from "./components/Home_Page/Hero_Section/Hero";
+import Socialapps from "./components/Home_Page/Hero_Section/Socialapps";
+import About from "./components/Aboutus_Page/About";
+import { CarouselProvider } from "./components/Home_Page/Carousel_compo/CarouselContext";
 
 
 import carousel1 from "./assets/Pks_Photos/PKs_Clean_Photos/Carousel/carousel1.jpg"

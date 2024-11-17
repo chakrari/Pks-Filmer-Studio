@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../../assets/photo_for_website/logo.png";
+// import logo from "../../assets/photo_for_website/logo.png";
+import logo from "../../../assets/Pks_Photos/PKs_Clean_Photos/Logo/logo.png"
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import { FaArrowRight } from "react-icons/fa";
