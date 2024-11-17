@@ -1,28 +1,28 @@
-import React from 'react';
-import { useCarousel } from '../Carousel_compo/CarouselContext'; // Import useCarousel hook
-import 'flowbite';
-import 'flowbite/dist/flowbite.css';
+import React, { useState } from "react";
+import "flowbite";
+import "flowbite/dist/flowbite.css";
 
 const Carousel = ({ slides }) => {
-  const { currentSlide, setCurrentSlide } = useCarousel();
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   const handleSlideChange = (index) => {
     setCurrentSlide(index);
 
-    const buttons = document.querySelectorAll('[data-carousel-slide-to]');
+    const buttons = document.querySelectorAll("[data-carousel-slide-to]");
     buttons.forEach((button, i) => {
-      button.classList.toggle('bg-white', i === index);
-      button.classList.toggle('bg-gray-800', i !== index);
+      button.classList.toggle("bg-white", i === index);
+      button.classList.toggle("bg-gray-800", i !== index);
     });
   };
 
   return (
     <div id="default-carousel" className="relative w-full h-[100vh]" data-carousel="slide">
+      {/* Carousel slides */}
       <div className="relative w-full h-full overflow-hidden">
         {slides.map((slide, index) => (
           <div
             key={index}
-            className={`duration-1000 ease-in-out ${index === currentSlide ? '' : 'hidden'}`}
+            className={`duration-1000 ease-in-out ${index === currentSlide ? "" : "hidden"}`}
             data-carousel-item
           >
             <img
@@ -34,13 +34,14 @@ const Carousel = ({ slides }) => {
         ))}
       </div>
 
+      {/* Indicators */}
       <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
         {slides.map((_, index) => (
           <button
             key={index}
             type="button"
-            className={`w-3 h-3 rounded-full ${index === currentSlide ? 'bg-white' : 'bg-gray-800'}`}
-            aria-current={index === currentSlide ? 'true' : 'false'}
+            className={`w-3 h-3 rounded-full ${index === currentSlide ? "bg-white" : "bg-gray-800"}`}
+            aria-current={index === currentSlide ? "true" : "false"}
             aria-label={`Slide ${index + 1}`}
             data-carousel-slide-to={index}
             onClick={() => handleSlideChange(index)}
@@ -48,6 +49,7 @@ const Carousel = ({ slides }) => {
         ))}
       </div>
 
+      {/* Previous Button */}
       <button
         type="button"
         className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
@@ -73,6 +75,8 @@ const Carousel = ({ slides }) => {
           <span className="sr-only">Previous</span>
         </span>
       </button>
+
+      {/* Next Button */}
       <button
         type="button"
         className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
@@ -103,4 +107,3 @@ const Carousel = ({ slides }) => {
 };
 
 export default Carousel;
-

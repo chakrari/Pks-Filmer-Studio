@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import HomeCard from "../../../layouts/HomeCard"
-import home1 from "../../../assets/Pks_Photos/PKs_Clean_Photos/Home/home1.jpg"
-import home2 from "../../../assets/Pks_Photos/PKs_Clean_Photos/Home/home2.jpg"
-import home3 from "../../../assets/Pks_Photos/PKs_Clean_Photos/Home/home3.jpg"
-import home4 from "../../../assets/Pks_Photos/PKs_Clean_Photos/Home/home4.jpg"
-import home5 from "../../../assets/Pks_Photos/PKs_Clean_Photos/Home/home5.jpg"
-import home6 from "../../../assets/Pks_Photos/PKs_Clean_Photos/Home/home6.jpg"
-import home7 from "../../../assets/Pks_Photos/PKs_Clean_Photos/Home/home7.jpg"
-import home8 from "../../../assets/Pks_Photos/PKs_Clean_Photos/Home/home8.jpg"
+import HomeCard from "../../layouts/HomeCard"
+import home1 from "../../assets/Pks_Photos/PKs_Clean_Photos/Home/home1.jpg"
+import home2 from "../../assets/Pks_Photos/PKs_Clean_Photos/Home/home2.jpg"
+import home3 from "../../assets/Pks_Photos/PKs_Clean_Photos/Home/home3.jpg"
+import home4 from "../../assets/Pks_Photos/PKs_Clean_Photos/Home/home4.jpg"
+import home5 from "../../assets/Pks_Photos/PKs_Clean_Photos/Home/home5.jpg"
+import home6 from "../../assets/Pks_Photos/PKs_Clean_Photos/Home/home6.jpg"
+import home7 from "../../assets/Pks_Photos/PKs_Clean_Photos/Home/home7.jpg"
+import home8 from "../../assets/Pks_Photos/PKs_Clean_Photos/Home/home8.jpg"
 
 function handleClick () {}{
   console.log("Button clicked")
