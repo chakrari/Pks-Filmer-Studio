@@ -13,6 +13,11 @@ const Navbar = () => {
 
   const handleMenu = () => {
     setIsNavDialogOpen(!isNavDialogOpen);
+    if (!isNavDialogOpen) {
+      document.body.style.overflow = "hidden"; // Disable scrolling
+    } else {
+      document.body.style.overflow = ""; // Enable scrolling
+    }
   };
 
   // Automatically close nav dialog when resizing to desktop view
@@ -21,6 +26,7 @@ const Navbar = () => {
       if (window.innerWidth >= 768) {
         setIsNavDialogOpen(false);
         setIsMobile(false); // Set to desktop view
+        document.body.style.overflow = ""; // Enable scrolling
       } else {
         setIsMobile(true); // Set to mobile view
       }
@@ -41,6 +47,7 @@ const Navbar = () => {
   useEffect(() => {
     if (isNavDialogOpen) {
       setIsNavDialogOpen(false);
+      document.body.style.overflow = ""; // Enable scrolling
     }
   }, [location]);
 
@@ -65,6 +72,13 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [isMobile]);
+
+  // Clean up scrolling restriction on unmount
+  useEffect(() => {
+    return () => {
+      document.body.style.overflow = ""; // Reset scrolling
+    };
+  }, []);
 
   return (
     <nav
@@ -102,11 +116,14 @@ const Navbar = () => {
         Smile Please
         <FaArrowRight />
       </button>
-      <button className="p-2 md:hidden" onClick={handleMenu}>
+      <button
+        className="p-2 md:hidden fixed top-4 right-4 z-50 text-white"
+        onClick={handleMenu}
+      >
         {isNavDialogOpen ? (
-          <IoMdClose className="text-white" />
+          <IoMdClose size={24} />
         ) : (
-          <GiHamburgerMenu className="text-white" />
+          <GiHamburgerMenu size={24} />
         )}
       </button>
 
@@ -123,8 +140,8 @@ const Navbar = () => {
                 alt="Logo"
               />
             </Link>
-            <button className="p-2 md:hidden" onClick={handleMenu}>
-              <IoMdClose className="text-white" />
+            <button className="p-2 md:hidden text-white" onClick={handleMenu}>
+              <IoMdClose size={24} />
             </button>
           </div>
           <div className="mt-10 flex flex-col gap-4">

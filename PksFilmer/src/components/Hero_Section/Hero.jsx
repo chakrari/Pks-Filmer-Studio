@@ -37,7 +37,7 @@ const Hero = () => {
         <HomeCard img={home8} />
       </div>
       <div className="text-left m-24 ">
-        <h2 className="text-4xl font-bold mb-4 ">Why Choose Us?</h2>
+        <h2 className="text-4xl font-bold mb-4 flex items-center justify-center">Why Choose Us?</h2>
         <p className="text-lg leading-relaxed max-w-18xl mx-auto">
           <span className="text-yellow-400 text-8xl">"</span>We create those
           special moments that light up your life. Our artistryOur expert team
@@ -56,7 +56,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="text-left m-24 ">
-        <h2 className="text-4xl font-bold mb-4 ">Our Services</h2>
+        <h2 className="text-4xl font-bold mb-4 flex items-center justify-center">Our Services</h2>
         <p className="text-lg leading-relaxed max-w-18xl mx-auto">
           <span className="text-yellow-400 text-8xl">"</span>Beyond the
           traditional genres, we have refined our expertise in the following
