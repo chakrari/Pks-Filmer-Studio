@@ -17,7 +17,7 @@ const Hero = () => {
   return (
     <div>
       <div className="text-left m-24">
-        <h2 className="text-4xl font-bold mb-4 ">Welcome to Pks Filmer</h2>
+        <h2 className="text-4xl font-bold mb-4 flex items-center justify-center">Welcome to Pks Filmer</h2>
         <p className="text-lg leading-relaxed max-w-18xl mx-auto">
           <span className="text-yellow-400 text-8xl">"</span>We create those
           special moments that light up your life. Our artistry creates timeless
