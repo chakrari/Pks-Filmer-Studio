@@ -181,8 +181,7 @@ const Contact = () => {
         <div className="flex place-items-start">
           <button
             type="submit"
-            // className="px-8 py-2 bg-blue-600 text-white font-bold rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            className="text-lg font-semibold bg-transparent text-white py-2 px-6 rounded-full border-2 border-white hover:bg-yellow-500"
+            className="text-lg font-semibold bg-transparent text-white py-2 px-6 rounded-full border-2 border-white hover:bg-yellow-500 mb-4"
           >
             Submit
           </button>
