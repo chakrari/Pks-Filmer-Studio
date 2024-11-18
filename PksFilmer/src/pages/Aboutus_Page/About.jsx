@@ -4,19 +4,19 @@ import aboutMain from "../../assets/Pks_Photos/PKs_Clean_Photos/About_Us/aboutMa
 function About() {
   return (
     <section className="about">
-      <div className="relative min-h-screen flex flex-col">
+      <div className="relative flex flex-col min-h-screen">
         {/* Background Image Container */}
         <div
-          className="absolute top-0 left-0 w-full"
+          className="absolute top-0 left-0 w-full h-screen"
           style={{
             backgroundImage: `url(${aboutMain})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
-            height: "100vh", // Adjust as needed
+            height: "h-100vh", // Adjust as needed
             zIndex: -1,
           }}
         >
-          <div className="absolute inset-0 bg-black bg-opacity-30"></div>{" "}
+          {/* <div className="absolute inset-0 bg-black bg-opacity-30"></div>{" "} */}
           {/* Slightly darker overlay */}
         </div>
 
