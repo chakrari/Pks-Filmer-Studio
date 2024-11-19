@@ -96,17 +96,17 @@ const Navbar = () => {
         <Link to="/about" className="font-bold hover:text-primary cursor-pointer">
           About
         </Link>
-        <Link to="#" className="font-bold hover:text-primary cursor-pointer">
+        <Link to="/gallery" className="font-bold hover:text-primary cursor-pointer">
           Gallery
         </Link>
-        <Link to="#" className="font-bold hover:text-primary cursor-pointer">
-          Services & Packages
+        <Link to="/services" className="font-bold hover:text-primary cursor-pointer">
+          Services
         </Link>
-        <Link to="#" className="font-bold hover:text-primary cursor-pointer">
+        <Link to="/cinematic-video" className="font-bold hover:text-primary cursor-pointer">
           Cinematic Video
         </Link>
-        <Link to="#" className="font-bold hover:text-primary cursor-pointer">
-          Reviews
+        <Link to="/team" className="font-bold hover:text-primary cursor-pointer">
+          Team
         </Link>
         <Link to="/contact" className="font-bold hover:text-primary cursor-pointer">
           Contact

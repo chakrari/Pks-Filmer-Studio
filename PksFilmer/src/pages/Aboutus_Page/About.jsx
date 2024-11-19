@@ -1,5 +1,5 @@
 import React from "react";
-import aboutMain from "../../assets/Pks_Photos/PKs_Clean_Photos/About_Us/aboutMain.jpg";
+import aboutPhoto from "../../assets/Pks_Photos/PKs_Clean_Photos/About_Us/about.jpg";
 
 function About() {
   return (
@@ -9,7 +9,7 @@ function About() {
         <div
           className="absolute top-0 left-0 w-full h-screen"
           style={{
-            backgroundImage: `url(${aboutMain})`,
+            backgroundImage: `url(${aboutPhoto})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             height: "h-100vh", // Adjust as needed

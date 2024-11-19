@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import contactMain from "../../assets/Pks_Photos/PKs_Clean_Photos/Contact_Us/contact.jpg";
+import contactPhoto from "../../assets/Pks_Photos/PKs_Clean_Photos/Contact_Us/contact.jpg";
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+import { SiGooglemaps } from "react-icons/si";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaGoogle } from "react-icons/fa";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -45,7 +51,7 @@ const Contact = () => {
         <div
           className="absolute top-0 left-0 w-full h-screen"
           style={{
-            backgroundImage: `url(${contactMain})`,
+            backgroundImage: `url(${contactPhoto})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             height: "h-100vh", // Adjust as needed
@@ -78,6 +84,20 @@ const Contact = () => {
             </p>
           </div>
         </div>
+      </div>
+      <div className="text-left mt-16 ">
+        <h2 className="text-4xl font-bold mb-3 ml-20 lg:ml-32">Contact info</h2>
+        <p className="text-lg leading-relaxed max-w-18xl mb-10 ml-20 lg:ml-28">
+          <span className="text-yellow-400 text-8xl ">"</span>We are Listening
+        </p>
+      </div>
+      <div className="flex flex-wrap ml-36  gap-x-96 gap-y-28 w-full ">
+        <FaPhoneAlt size={40} />
+        <FaWhatsapp size={40} />
+        <SiGooglemaps size={40} />
+        <FaFacebookSquare size={40} />
+        <FaInstagram size={40} />
+        <FaGoogle size={40} />
       </div>
       <div className="text-left mt-16 ">
         <h2 className="text-4xl font-bold mb-3 ml-20 lg:ml-32">
