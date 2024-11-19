@@ -45,17 +45,17 @@ const CinematicVideo = () => {
         </div>
       </div>
       <div className="grid grid-cols-2">
-        <Container>
+        <Container className="mt-40">
           <h2
-            className="text-2xl font-bold mt-16 flex items-center justify-center "
+            className="text-2xl font-bold flex items-center justify-center "
             style={{ textShadow: "2px 2px 4px rgba(1, 1, 1, 1)" }}
           >
             Lens & Light: Capturing Life in Focus
           </h2>
-          <div className="flex items-center justify-center">
-            <div className="relative pb-[40%] h-0 w-[65%]">
+          <div className="flex items-center justify-center mt-7 ">
+            <div className="relative h-80 ml-14 w-full ">
               <iframe
-                className="absolute top-0 left-0 w-full h-full border-none"
+                className="absolute w-full h-[95%] border-none"
                 src="https://www.youtube.com/embed/mIcQUsWoxc8"
                 title="Youtube video"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -66,7 +66,7 @@ const CinematicVideo = () => {
         </Container>
         <div>
           <h2
-            className="text-4xl font-bold mt-16 flex items-center justify-center "
+            className="text-4xl font-bold mt-14 flex items-center justify-center "
             style={{ textShadow: "2px 2px 4px rgba(1, 1, 1, 1)" }}
           >
             Testimonials

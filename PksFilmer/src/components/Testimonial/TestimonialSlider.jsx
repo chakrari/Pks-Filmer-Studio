@@ -33,12 +33,12 @@ const TestimonialSlider = () => {
               <img
                 src={review.image}
                 alt={`Profile of ${review.name}`}
-                className="rounded-full shadow-lg mb-4 w-36 h-36 object-cover border-4 border-gray-700"
+                className="rounded-full shadow-lg mb-4 w-36 h-36 object-cover border-4 border-gray-700 mt-20"
               />
               {/* Testimonial Text */}
-              <p className="text-gray-300 mb-4">{review.text}</p>
+              <p className="text-gray-300 mb-2">{review.text}</p>
               {/* Rating Stars */}
-              <div className="text-yellow-400 mb-4">
+              <div className="text-yellow-400 ">
                 {[...Array(5)].map((_, starIndex) => (
                   <span
                     key={starIndex}
