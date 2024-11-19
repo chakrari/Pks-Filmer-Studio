@@ -45,14 +45,13 @@ const CinematicVideo = () => {
         </div>
       </div>
       <div className="grid grid-cols-2">
-        <Container className="mt-40">
-          <h2
-            className="text-2xl font-bold flex items-center justify-center "
-            style={{ textShadow: "2px 2px 4px rgba(1, 1, 1, 1)" }}
-          >
-            Lens & Light: Capturing Life in Focus
+        <Container className="mt-36">
+          <h2 class="text-3xl font-bold text-center ml-10 text-white drop-shadow-lg">
+            Lens & Light: Capturing Life in <br />
+            <span class="block">Focus</span>
           </h2>
-          <div className="flex items-center justify-center mt-7 ">
+
+          <div className="flex items-center justify-center mt-4 ">
             <div className="relative h-80 ml-14 w-full ">
               <iframe
                 className="absolute w-full h-[95%] border-none"
