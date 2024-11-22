@@ -1,38 +1,57 @@
 import React, { useState, useEffect } from "react";
 import {
   AiFillFacebook,
-  AiFillTwitterCircle,
   AiFillInstagram,
-  AiFillLinkedin,
   AiFillYoutube,
+  AiFillLinkedin,
 } from "react-icons/ai";
 import { FcGoogle } from "react-icons/fc";
-import { MdLocationOn } from "react-icons/md";
-import { FaCalendarCheck } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
+import { FaCalendarCheck } from "react-icons/fa";
 
 const Socialapps = () => {
   const [showIcons, setShowIcons] = useState(false);
+  const [scrolling, setScrolling] = useState(false);
 
   useEffect(() => {
+    let scrollTimeout;
+
     const handleScroll = () => {
       if (window.scrollY > 300) {
-        setShowIcons(true);
-      } else {
+        setShowIcons(true); // Show icons when scrolled below 300px
+      }
+
+      // Set scrolling to true when scroll event occurs
+      setScrolling(true);
+
+      // Clear the previous timeout to prevent earlier hiding of icons
+      clearTimeout(scrollTimeout);
+
+      // Set a new timeout to hide icons after 2 seconds of inactivity
+      scrollTimeout = setTimeout(() => {
+        setScrolling(false); // Hide icons after 2 seconds of inactivity
+      }, 2000); // 2000ms = 2 seconds
+
+      // If scrolled back above 300px, hide the icons
+      if (window.scrollY <= 300) {
         setShowIcons(false);
       }
     };
 
+    // Attach the scroll event listener
     window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener and timeout
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      clearTimeout(scrollTimeout); // Clear timeout on cleanup
     };
   }, []);
 
   const icons = [
     {
       icon: <FcGoogle size="20" />,
-      link: "https://www.google.com/maps/place/PKS+Filmer/@22.4807021,88.3347199,17z/data=!3m1!4b1!4m6!3m5!1s0x3a027144d1fcdc1b:0x123657d378866540!8m2!3d22.4806972!4d88.3372948!16s%2Fg%2F11rs2b8r8s?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D",
+      link: "https://www.google.com/maps/place/PKS+Filmer/",
       bgColor: "bg-white",
       hoverColor: "hover:bg-gray-400",
       tooltip: "Google Reviews",
@@ -60,14 +79,14 @@ const Socialapps = () => {
     },
     {
       icon: <AiFillLinkedin size="20" />,
-      link: "https://www.linkedin.com/in/pritam-kumar-shaw-4a45a4184/?originalSubdomain=in",
+      link: "https://www.linkedin.com/in/pritam-kumar-shaw/",
       bgColor: "bg-blue-800",
       hoverColor: "hover:bg-blue-900",
       tooltip: "LinkedIn",
     },
     {
       icon: <FaPhoneAlt size="20" />,
-      link: "https://www.justdial.com/Kolkata/Pks-Filmer-Paschim-Putiary/033PXX33-XX33-230323043049-P8U3_BZDET",
+      link: "https://www.justdial.com/Kolkata/Pks-Filmer-Paschim-Putiary/",
       bgColor: "bg-green-600",
       hoverColor: "hover:bg-green-700",
       tooltip: "Just Dial",
@@ -83,7 +102,8 @@ const Socialapps = () => {
 
   return (
     <>
-      {showIcons && (
+      {/* Render social icons only when showIcons is true and scrolling */}
+      {showIcons && scrolling && (
         <div className="fixed top-52 left-3 z-50">
           <ul className="space-y-4">
             {icons.map((item, index) => (
