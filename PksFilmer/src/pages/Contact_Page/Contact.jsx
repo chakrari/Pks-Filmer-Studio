@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import contactPhoto from "../../assets/Pks_Photos/PKs_Clean_Photos/Contact_Us/contact.jpg";
 import contactSecondPhoto from "../../assets/Pks_Photos/PKs_Clean_Photos/Contact_Us/contactSecond.jpg";
+import Modal from "../../components/Contact_compo/modal";
 import telephoneImage from "../../assets/Pks_Photos/PKs_Clean_Photos/Contact_Us/telephone.png";
 import whatsappImage from "../../assets/Pks_Photos/PKs_Clean_Photos/Contact_Us/whatsapp.png";
 import googlemapImage from "../../assets/Pks_Photos/PKs_Clean_Photos/Contact_Us/map.png";
@@ -15,6 +16,18 @@ const Contact = () => {
     subject: "",
     message: "",
   });
+  const [showModal, setShowModal] = useState(false);
+
+  const handleModalOpen = () => {
+    document.body.classList.add("no-scroll");
+    setShowModal(true);
+  };
+
+  const handleModalClose = () => {
+    document.body.classList.remove("no-scroll");
+    setShowModal(false);
+    setFormData({ name: "", email: "", subject: "", message: "" }); 
+  };
 
   const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
@@ -40,9 +53,7 @@ const Contact = () => {
       alert("Please enter a valid email address.");
       return; // Prevent form submission if email is invalid
     }
-    console.log("Form Submitted:", formData);
-    alert("Thank you for contacting us!");
-    setFormData({ name: "", email: "", subject: "", message: "" }); // Reset form
+        handleModalOpen();
   };
 
   return (
@@ -349,6 +360,7 @@ const Contact = () => {
           >
             Submit
           </button>
+          {showModal && <Modal onClose={handleModalClose} />}
         </div>
       </form>
     </div>

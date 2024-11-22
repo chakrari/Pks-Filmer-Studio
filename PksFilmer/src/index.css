@@ -9,3 +9,7 @@ body{
     font-family: 'poppins',sabs-serif;
     color: white;
 }
+.no-scroll {
+    overflow: hidden;
+  }
+  
