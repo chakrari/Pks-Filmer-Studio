@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import contactPhoto from "../../assets/Pks_Photos/PKs_Clean_Photos/Contact_Us/contact.jpg";
-import { FaPhoneAlt } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
-import { SiGooglemaps } from "react-icons/si";
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaGoogle } from "react-icons/fa";
+import contactSecondPhoto from "../../assets/Pks_Photos/PKs_Clean_Photos/Contact_Us/contactSecond.jpg";
+import telephoneImage from "../../assets/Pks_Photos/PKs_Clean_Photos/Contact_Us/telephone.png";
+import whatsappImage from "../../assets/Pks_Photos/PKs_Clean_Photos/Contact_Us/whatsapp.png";
+import googlemapImage from "../../assets/Pks_Photos/PKs_Clean_Photos/Contact_Us/map.png";
+import facebookImage from "../../assets/Pks_Photos/PKs_Clean_Photos/Contact_Us/facebook.png";
+import instagramImage from "../../assets/Pks_Photos/PKs_Clean_Photos/Contact_Us/instagram.png";
+import googleImage from "../../assets/Pks_Photos/PKs_Clean_Photos/Contact_Us/google.png";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -91,15 +92,158 @@ const Contact = () => {
           <span className="text-yellow-400 text-8xl ">"</span>We are Listening
         </p>
       </div>
-      <div className="flex flex-wrap ml-36  gap-x-96 gap-y-28 w-full ">
-        <FaPhoneAlt size={40} />
-        <FaWhatsapp size={40} />
-        <SiGooglemaps size={40} />
-        <FaFacebookSquare size={40} />
-        <FaInstagram size={40} />
-        <FaGoogle size={40} />
+      <div className="grid grid-cols-3 gap-y-12 gap-x-16 ml-4 w-full">
+        {/* Telephone */}
+        <div className="flex flex-col items-center text-center">
+          <img src={telephoneImage} alt="Telephone" className="h-16" />
+          <p className="mt-2 text-2xl font-medium text-white">Call Us</p>
+          <p className=" ml-4 text-lg text-gray-500 hover:text-yellow-400">
+            Call us at +917980108976
+          </p>
+        </div>
+
+        {/* WhatsApp */}
+        <div className="flex flex-col items-center text-center">
+          <a
+            href="https://wa.me/7980108976"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:scale-110 transition-transform"
+          >
+            <img src={whatsappImage} alt="WhatsApp" className="h-16" />
+          </a>
+          <p className="mt-2 text-2xl font-medium text-white">WhatsApp</p>
+
+          <a
+            href="https://wa.me/7980108976"
+            className="hover:text-yellow-400 text-lg text-gray-500"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Plan your shoot on whatsapp +917980108976
+          </a>
+        </div>
+
+        {/* Google Map */}
+        <div className="flex flex-col items-center text-center">
+          <a
+            href="https://www.google.com/maps/place/PKS+Filmer/@22.4807021,88.3347199,17z/data=!3m1!4b1!4m6!3m5!1s0x3a027144d1fcdc1b:0x123657d378866540!8m2!3d22.4806972!4d88.3372948!16s%2Fg%2F11rs2b8r8s?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:scale-110 transition-transform"
+          >
+            <img src={googlemapImage} alt="Google Map" className="h-16" />
+          </a>
+          <p className="mt-2 text-2xl font-medium text-white">Visit Us</p>
+          <a
+            className="text-lg hover:text-yellow-400 text-gray-500 mr-6"
+            href="https://www.google.com/maps/place/PKS+Filmer/@22.4807021,88.3347199,17z/data=!3m1!4b1!4m6!3m5!1s0x3a027144d1fcdc1b:0x123657d378866540!8m2!3d22.4806972!4d88.3372948!16s%2Fg%2F11rs2b8r8s?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            76/3, Mahatma Gandhi Rd, Haridevpur, Paschim Putiary, Kolkata, West
+            Bengal 700082
+          </a>
+        </div>
+
+        {/* Facebook */}
+        <div className="flex flex-col items-center text-center">
+          <a
+            href="https://www.facebook.com/pksfilmer"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:scale-110 transition-transform"
+          >
+            <img src={facebookImage} alt="Facebook" className="h-16" />
+          </a>
+          <p className="mt-2 text-2xl font-medium text-white">Facebook</p>
+          <a
+            href="https://www.facebook.com/pksfilmer"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-lg hover:text-yellow-400 text-gray-500"
+          >
+            Like our Facebook page
+          </a>
+        </div>
+
+        {/* Instagram */}
+        <div className="flex flex-col items-center text-center">
+          <a
+            href="https://www.instagram.com/pks_filmer/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:scale-110 transition-transform"
+          >
+            <img src={instagramImage} alt="Instagram" className="h-16" />
+          </a>
+          <p className="mt-2 text-2xl font-medium text-white">Instagram</p>
+          <a
+            href="https://www.instagram.com/pks_filmer/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-lg hover:text-yellow-400 text-gray-500"
+          >
+            Follow us on Instagram
+          </a>
+        </div>
+
+        {/* Google */}
+        <div className="flex flex-col items-center text-center">
+          <a
+            href="https://www.google.com/maps/place/PKS+Filmer/@22.4807021,88.3347199,17z/data=!4m8!3m7!1s0x3a027144d1fcdc1b:0x123657d378866540!8m2!3d22.4806972!4d88.3372948!9m1!1b1!16s%2Fg%2F11rs2b8r8s?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:scale-110 transition-transform"
+          >
+            <img src={googleImage} alt="Google" className="h-16" />
+          </a>
+          <p className="mt-2 text-2xl font-medium text-white">Google</p>
+          <a
+            href="https://www.google.com/maps/place/PKS+Filmer/@22.4807021,88.3347199,17z/data=!4m8!3m7!1s0x3a027144d1fcdc1b:0x123657d378866540!8m2!3d22.4806972!4d88.3372948!9m1!1b1!16s%2Fg%2F11rs2b8r8s?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-lg hover:text-yellow-400 text-gray-500"
+          >
+            Give Review on Google
+          </a>
+        </div>
       </div>
-      <div className="text-left mt-16 ">
+      <div className="relative text-left mt-24" style={{ height: "60vh" }}>
+        <div
+          className="absolute top-0 left-0 w-full h-full"
+          style={{
+            backgroundImage: `url(${contactSecondPhoto})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            filter: "blur(1px)",
+            zIndex: -1,
+          }}
+        ></div>
+        {/* Text Container with background for contrast */}
+        <div className="relative z-100 px-6 py-12">
+          <h2 className="text-4xl font-bold mb-3 ml-20 lg:ml-32 text-white">
+            Book Us For an Event
+          </h2>
+          <p className="text-lg leading-relaxed max-w-18xl mb-10 ml-20 lg:ml-28 text-white">
+            <span className="text-yellow-400 text-8xl ">"</span>Get your events
+            organised to perfection by team Pks Filmer
+          </p>
+          <button
+            className="text-lg font-semibold bg-transparent text-white py-2 px-6 rounded-full border-2 border-white hover:bg-yellow-500 ml-36"
+            onClick={() =>
+              window.open(
+                "https://wa.me/+917980108976?text=Hello, I would like to discuss more about the services.",
+                "_blank"
+              )
+            }
+          >
+            Let's discuss on Whatsapp
+          </button>
+        </div>
+      </div>
+      <div className="text-left mt-24 ">
         <h2 className="text-4xl font-bold mb-3 ml-20 lg:ml-32">
           Book Your Dream Shoot Today!
         </h2>

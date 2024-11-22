@@ -35,15 +35,8 @@ const Socialapps = () => {
       link: "https://www.google.com/maps/place/PKS+Filmer/@22.4807021,88.3347199,17z/data=!3m1!4b1!4m6!3m5!1s0x3a027144d1fcdc1b:0x123657d378866540!8m2!3d22.4806972!4d88.3372948!16s%2Fg%2F11rs2b8r8s?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D",
       bgColor: "bg-white",
       hoverColor: "hover:bg-gray-400",
-      tooltip: "Google Reviews"
+      tooltip: "Google Reviews",
     },
-    // {
-    //   icon: <MdLocationOn size="20" />,
-    //   link: "https://www.google.com/maps/place/PKS+Filmer/@22.4807021,88.3347199,17z/data=!3m1!4b1!4m6!3m5!1s0x3a027144d1fcdc1b:0x123657d378866540!8m2!3d22.4806972!4d88.3372948!16s%2Fg%2F11rs2b8r8s?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D",
-    //   bgColor: "bg-teal-600",
-    //   hoverColor: "hover:bg-teal-700",
-    //   tooltip: "Location",
-    // },
     {
       icon: <AiFillFacebook size="20" />,
       link: "https://www.facebook.com/pksfilmer",
@@ -104,8 +97,10 @@ const Socialapps = () => {
                   {item.icon}
                 </a>
                 {/* Tooltip */}
-                <div className="absolute left-full top-1/2 transform -translate-y-1/2 ml-2 opacity-0 group-hover:opacity-100 transition-opacity 
-                duration-300 bg-gray-800 text-white text-sm rounded py-1 px-2 whitespace-nowrap">
+                <div
+                  className="absolute left-full top-1/2 transform -translate-y-1/2 ml-2 opacity-0 group-hover:opacity-100 transition-opacity 
+                duration-300 bg-gray-800 text-white text-sm rounded py-1 px-2 whitespace-nowrap"
+                >
                   {item.tooltip}
                 </div>
               </li>
