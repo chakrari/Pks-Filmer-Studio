@@ -12,6 +12,8 @@ export default {
       fontFamily: {
         display: ["Poppins", "sans-serif"],
         body: ["Inter", "sans-serif"],
+        abril: ['"Abril Fatface"', 'cursive'],
+        roboto:["Roboto", "Poppins"],
       },
     },
   },

@@ -3,6 +3,7 @@ import Home from "./pages/Home_Page/Home";
 import About from "./pages/Aboutus_Page/About";
 import Contact from "./pages/Contact_Page/Contact";
 import CinematicVideo from "./pages/CinematicWedding_Page/CinematicVideo"
+import Gallery from "./pages/Gallery_Page/gallery"
 
 // Routes array with path and component mappings
 const routes = [
@@ -21,6 +22,10 @@ const routes = [
   {
     path: "/cinematic-video",
     element: <CinematicVideo />,
+  },
+  {
+    path: "/gallery",
+    element: <Gallery />,
   }
 ];
 
