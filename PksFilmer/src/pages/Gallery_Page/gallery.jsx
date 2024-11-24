@@ -1,4 +1,5 @@
 import React from "react";
+import {Link } from "react-router-dom";
 import galleyMainPhoto from "../../assets/Pks_Photos/PKs_Clean_Photos/Gallery/galleryPhoto.jpg";
 import MasonaryGrid from "../../components/Gallery_Compo/MasonaryGrid";
 
@@ -66,8 +67,14 @@ const gallery = () => {
         <h2 className="text-5xl">
           Bringing your vision to life through every shot.
         </h2>
-        <p className="font-roboto mt-8 text-2xl">Through creative ideas, innovation & sheer determination</p>
-        <button className="mt-8 font-display text-lg font-semibold bg-transparent text-white py-2 px-6 border-2 border-white hover:bg-yellow-500">CONTACT US</button>
+        <p className="font-roboto mt-8 text-2xl">
+          Through creative ideas, innovation & sheer determination
+        </p>
+        <Link to="/contact">
+          <button className="mt-8 font-display text-lg font-semibold bg-transparent text-white py-2 px-6 border-2 border-white hover:bg-yellow-500">
+            CONTACT US
+          </button>
+        </Link>
       </div>
     </div>
   );
