@@ -40,15 +40,7 @@ const TestimonialSlider = () => {
               {/* Rating Stars */}
               <div className="text-yellow-400 ">
                 {[...Array(5)].map((_, starIndex) => (
-                  <span
-                    key={starIndex}
-                    className={
-                    //   starIndex < review.rating
-                    //     ? "text-yellow-400"
-                    //     : "text-gray-600"
-                    "text-yellow-400"
-                    }
-                  >
+                  <span key={starIndex} className={"text-yellow-400"}>
                     &#9733;
                   </span>
                 ))}

@@ -15,10 +15,7 @@ function About() {
             height: "h-100vh", // Adjust as needed
             zIndex: -1,
           }}
-        >
-          {/* <div className="absolute inset-0 bg-black bg-opacity-30"></div>{" "} */}
-          {/* Slightly darker overlay */}
-        </div>
+        ></div>
 
         {/* Text Container */}
         <div
