@@ -18,6 +18,9 @@ import Time from "../../assets/Pks_Photos/PKs_Clean_Photos/Home/time.png";
 import Memory from "../../assets/Pks_Photos/PKs_Clean_Photos/Home/memory.png";
 import CameraShy from "../../assets/Pks_Photos/PKs_Clean_Photos/Home/camerashy.png";
 import Team from "./Team";
+import Container from "react-bootstrap/Container";
+import TestimonialSlider from "../Testimonial/TestimonialSlider";
+import QuickLinks from "../Hero_Section/QuickLinks"
 
 const Hero = () => {
   return (
@@ -161,7 +164,9 @@ const Hero = () => {
           {/* We Care About You */}
           <div className="text-center">
             <img src={Care} alt="Caring" className="w-24 h-24 mx-auto" />
-            <h3 className="text-2xl font-semibold mb-4 mt-4">We Care About You</h3>
+            <h3 className="text-2xl font-semibold mb-4 mt-4">
+              We Care About You
+            </h3>
             <p className="text-base">
               We are much over the cliched give and take type of relationship in
               a business. We believe that the connection with our client is much
@@ -173,7 +178,9 @@ const Hero = () => {
           {/* We Enjoy Travelling */}
           <div className="text-center">
             <img src={Travel} alt="Travelling" className="w-24 h-24 mx-auto" />
-            <h3 className="text-2xl font-semibold mb-4 mt-4">We Enjoy Travelling</h3>
+            <h3 className="text-2xl font-semibold mb-4 mt-4">
+              We Enjoy Travelling
+            </h3>
             <p className="text-base">
               Along with the click sound of the shutter, we love the sound of
               travelling. Besides, we are always up for reaching you or
@@ -199,7 +206,9 @@ const Hero = () => {
           {/* We Create Memory */}
           <div className="text-center">
             <img src={Memory} alt="Memory" className="w-24 h-24 mx-auto" />
-            <h3 className="text-2xl font-semibold mb-4 mt-4">We Create Memory</h3>
+            <h3 className="text-2xl font-semibold mb-4 mt-4">
+              We Create Memory
+            </h3>
             <p className="text-base">
               Be it the first smash cake of your little bundle of joy, or a DDLJ
               style pre-wedding shoot, or the emotional bidaayi moment in your
@@ -215,7 +224,9 @@ const Hero = () => {
               alt="Camera Shy"
               className="w-24 h-24 mx-auto"
             />
-            <h3 className="text-2xl font-semibold mb-4 mt-4">Camera Shy Person?</h3>
+            <h3 className="text-2xl font-semibold mb-4 mt-4">
+              Camera Shy Person?
+            </h3>
             <p className="text-base">
               We totally understand that not everyone is very comfortable in
               front of the camera. We know how camera consciousness is like. So
@@ -224,6 +235,55 @@ const Hero = () => {
             </p>
           </div>
         </div>
+      </div>
+      <div className="m-24 text-center">
+        <h2 className="text-4xl font-bold mb-4 flex items-center justify-center">
+          We Create Lasting Memories Together
+        </h2>
+        <p className="text-lg leading-relaxed  mx-auto">
+          <span className="text-yellow-400 text-8xl">"</span>We go beyond
+          capturing images, focusing on building connections, respecting your
+          time, and embracing every emotion. Whether it’s traveling to your
+          dream location or helping you feel comfortable, our dedicated team
+          ensures timeless, heartfelt memories for you.
+        </p>
+      </div>
+      <div className="grid grid-cols-2">
+        <Container className="mt-36">
+          <h2 class="text-3xl font-bold text-center ml-10 text-white drop-shadow-lg">
+            Lens & Light: Capturing Life in <br />
+            <span class="block">Focus</span>
+          </h2>
+          <div className="flex items-center justify-center mt-4 ">
+            <div className="relative h-80 ml-14 w-full ">
+              <iframe
+                className="absolute w-full h-[95%] border-none"
+                src="https://www.youtube.com/embed/mIcQUsWoxc8"
+                title="Youtube video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </Container>
+        <div>
+          <h2
+            className="text-4xl font-bold mt-14 flex items-center justify-center "
+            style={{ textShadow: "2px 2px 4px rgba(1, 1, 1, 1)" }}
+          >
+            Testimonials
+          </h2>
+          <h3
+            className="text-lg font-bold mt-2 flex items-center justify-center "
+            style={{ textShadow: "2px 2px 4px rgba(1, 1, 1, 1)" }}
+          >
+            CLIENTS LOVE US
+          </h3>
+          <TestimonialSlider />
+        </div>
+      </div>
+      <div>
+      <QuickLinks />
       </div>
     </div>
   );

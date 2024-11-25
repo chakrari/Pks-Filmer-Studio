@@ -1,7 +1,5 @@
 import React from "react";
 import cinematicPhoto from "../../assets/Pks_Photos/PKs_Clean_Photos/Cinematic_Video/cinematic.jpg";
-import Container from "react-bootstrap/Container";
-import TestimonialSlider from "../../components/Testimonial/TestimonialSlider";
 
 const CinematicVideo = () => {
   return (
@@ -42,41 +40,6 @@ const CinematicVideo = () => {
               the magic is going to be there forever!
             </p>
           </div>
-        </div>
-      </div>
-      <div className="grid grid-cols-2">
-        <Container className="mt-36">
-          <h2 class="text-3xl font-bold text-center ml-10 text-white drop-shadow-lg">
-            Lens & Light: Capturing Life in <br />
-            <span class="block">Focus</span>
-          </h2>
-
-          <div className="flex items-center justify-center mt-4 ">
-            <div className="relative h-80 ml-14 w-full ">
-              <iframe
-                className="absolute w-full h-[95%] border-none"
-                src="https://www.youtube.com/embed/mIcQUsWoxc8"
-                title="Youtube video"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            </div>
-          </div>
-        </Container>
-        <div>
-          <h2
-            className="text-4xl font-bold mt-14 flex items-center justify-center "
-            style={{ textShadow: "2px 2px 4px rgba(1, 1, 1, 1)" }}
-          >
-            Testimonials
-          </h2>
-          <h3
-            className="text-lg font-bold mt-2 flex items-center justify-center "
-            style={{ textShadow: "2px 2px 4px rgba(1, 1, 1, 1)" }}
-          >
-            CLIENTS LOVE US
-          </h3>
-          <TestimonialSlider />
         </div>
       </div>
     </div>
