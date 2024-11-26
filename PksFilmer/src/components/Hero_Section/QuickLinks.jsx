@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const QuickLinks = () => {
   return (
-    <div className=" bg-gradient-to-b from-gray-800 to-black text-white p-10 mt-40 ">
+    <div className=" bg-gradient-to-b from-gray-800 to-black text-white p-10 mt-28 ">
       <div className="grid grid-cols-3">
         {/* Quick Links Section */}
         <div className="ml-10">

@@ -1,36 +1,31 @@
 import React from "react";
 import aboutPhoto from "../../assets/Pks_Photos/PKs_Clean_Photos/About_Us/about.jpg";
+import CardFlip from "../../components/About_Compo/CardFlip";
 
 function About() {
   return (
-    <section className="about">
+    <div className="">
       <div className="relative flex flex-col min-h-screen">
         {/* Background Image Container */}
         <div
-          className="absolute top-0 left-0 w-full h-screen"
-          style={{
-            backgroundImage: `url(${aboutPhoto})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            height: "h-100vh", // Adjust as needed
-            zIndex: -1,
-          }}
+          className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
+          style={{ backgroundImage: `url(${aboutPhoto})` }}
         ></div>
 
         {/* Text Container */}
         <div
-          className="relative z-20 p-18 lg:px-20 text-white"
+          className="relative z-20 px-8 py-18 lg:px-20 text-white"
           style={{ marginTop: "19vh" }} // Adjust positioning if needed
         >
-          <div className="text-down_left">
+          <div className="text-left ml-5">
             <h2
-              className="text-4xl font-bold mb-4"
+              className="text-4xl font-bold mt-16"
               style={{ textShadow: "2px 2px 4px rgba(1, 1, 1, 1)" }}
             >
               ABOUT PKSFILMER
             </h2>
             <p
-              className="text-lg"
+              className="text-lg mt-6"
               style={{ textShadow: "1px 1px 3px rgba(0, 0, 0, 0.6)" }}
             >
               <span className="text-yellow-400 text-8xl">“</span>
@@ -45,11 +40,8 @@ function About() {
       </div>
 
       {/* Add the following section with black transparent background */}
-      <div
-        className="bg-black  text-white py-16 px-8 lg:px-32"
-        style={{ marginTop: "-15vh" }}
-      >
-        <div className="text-left mb-12">
+      <div className="py-16 px-8 lg:px-32 mt-16">
+        <div className="text-center mb-12">
           <h2 className="text-5xl font-bold mb-4">
             We Love To Create Memories
           </h2>
@@ -98,7 +90,25 @@ function About() {
           </div>
         </div>
       </div>
-    </section>
+      <div className="text-center">
+        <h2 className="text-4xl font-bold mb-2">
+          Why Choose Us ?
+        </h2>
+        <p className="text-lg leading-relaxed ">
+          <span className="text-yellow-400 text-8xl">"</span>Our expert team
+          transforms your precious moments into timeless memories. With top-tier
+          skills and cutting-edge equipment, we don’t just take photos – we
+          craft visual stories that last a lifetime. From digital masterpieces
+          to stunning prints, we capture the essence of your special day. Our
+          photographers blend artistry with technology to bring out the best in
+          every shot. We’re not just preserving memories; we’re making dreams
+          tangible. Let our lenses work their magic at your next big event. Why
+          settle for the ordinary when you can have extraordinary? Your moments,
+          our passion, let’s create something truly unforgettable.
+        </p>
+      </div>
+      <CardFlip />
+    </div>
   );
 }
 

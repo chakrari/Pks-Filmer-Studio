@@ -18,9 +18,8 @@ import Time from "../../assets/Pks_Photos/PKs_Clean_Photos/Home/time.png";
 import Memory from "../../assets/Pks_Photos/PKs_Clean_Photos/Home/memory.png";
 import CameraShy from "../../assets/Pks_Photos/PKs_Clean_Photos/Home/camerashy.png";
 import Team from "./Team";
-import Container from "react-bootstrap/Container";
 import TestimonialSlider from "../Testimonial/TestimonialSlider";
-import QuickLinks from "../Hero_Section/QuickLinks"
+import QuickLinks from "../Hero_Section/QuickLinks";
 
 const Hero = () => {
   return (
@@ -249,7 +248,7 @@ const Hero = () => {
         </p>
       </div>
       <div className="grid grid-cols-2">
-        <Container className="mt-36">
+        <section className="mt-36">
           <h2 class="text-3xl font-bold text-center ml-10 text-white drop-shadow-lg">
             Lens & Light: Capturing Life in <br />
             <span class="block">Focus</span>
@@ -265,7 +264,7 @@ const Hero = () => {
               />
             </div>
           </div>
-        </Container>
+        </section>
         <div>
           <h2
             className="text-4xl font-bold mt-14 flex items-center justify-center "
@@ -283,7 +282,7 @@ const Hero = () => {
         </div>
       </div>
       <div>
-      <QuickLinks />
+        <QuickLinks />
       </div>
     </div>
   );

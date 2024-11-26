@@ -179,7 +179,7 @@ const Navbar = () => {
               to="#"
               className="font-medium p-3 hover:bg-gray-700 block rounded-lg"
             >
-              Reviews
+              Team
             </Link>
             <Link
               to="#"
@@ -189,7 +189,7 @@ const Navbar = () => {
             </Link>
           </div>
           <button className="mt-6 w-full flex gap-2 text-white items-center px-6 py-4 rounded-lg hover:bg-primary">
-            Smile Please
+            Book Us
             <FaArrowRight />
           </button>
         </div>
