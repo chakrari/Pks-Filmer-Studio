@@ -1,6 +1,18 @@
 import React from "react";
 import aboutPhoto from "../../assets/Pks_Photos/PKs_Clean_Photos/About_Us/about.jpg";
 import CardFlip from "../../components/About_Compo/CardFlip";
+import aboutQuote from "../../assets/Pks_Photos/PKs_Clean_Photos/About_Us/AboutQuote.jpg";
+import aboutImage from "../../assets/Pks_Photos/PKs_Clean_Photos/About_Us/AboutPhoto.jpg";
+import aboutServiceImage from "../../assets/Pks_Photos/PKs_Clean_Photos/About_Us/AboutServicePhoto.jpg";
+import { Link } from "react-router-dom";
+import QuickLinks from "../../components/Hero_Section/QuickLinks";
+
+const ServiceSection = ({ title, description }) => (
+  <div className="space-y-4">
+    <h2 className="text-[#4ca9b4] text-4xl font-bold">{title}</h2>
+    <p>{description}</p>
+  </div>
+);
 
 function About() {
   return (
@@ -90,11 +102,31 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="text-center">
-        <h2 className="text-4xl font-bold mb-2">
-          Why Choose Us ?
-        </h2>
-        <p className="text-lg leading-relaxed ">
+      <div className="relative flex flex-col mt-24 h-[400px] object-cover">
+        <div
+          className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
+          style={{ backgroundImage: `url(${aboutQuote})` }}
+        ></div>
+        <div
+          className="relative z-20 px-8 py-18 lg:px-20 text-white"
+          style={{ marginTop: "19vh" }}
+        >
+          <div className="text-left ml-5">
+            <h2
+              className="text-4xl font-semibold mt-16 italic"
+              style={{ textShadow: "2px 2px 4px rgba(1, 1, 1, 1)" }}
+            >
+              Photography is the beauty of life captured{" "}
+              <span className="block text-lg mt-4 not-italic">
+                – Tara Chisholm
+              </span>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div className="text-center mt-32">
+        <h2 className="text-4xl font-bold mb-2">Why Choose Us ?</h2>
+        <p className="text-lg leading-relaxed px-10">
           <span className="text-yellow-400 text-8xl">"</span>Our expert team
           transforms your precious moments into timeless memories. With top-tier
           skills and cutting-edge equipment, we don’t just take photos – we
@@ -108,6 +140,60 @@ function About() {
         </p>
       </div>
       <CardFlip />
+      <div className="mt-32">
+        <img
+          src={aboutImage}
+          alt="About Photo"
+          className="w-full max-h-[600px] object-cover"
+        />
+      </div>
+      <div className="mt-32">
+      <div className="text-center">
+        <h2 className="text-5xl font-bold mb-8 ">Where We Shine</h2>
+      </div>
+      <section className="text-left mt-24 px-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-24">
+          {/* Services section */}
+          <div className="space-y-12 mt-4 ">
+            <ServiceSection
+              title="Wedding & Pre-Wedding"
+              description="Capture the magic of your love story with our cinematic wedding and post-wedding photoshoots. From stunning romantic moments in picturesque locations to documenting your journey, we ensure every milestone is beautifully preserved. Trust us to create unique, breathtaking memories of your special day together."
+            />
+            <ServiceSection
+              title="Events & Product"
+              description="Capture the magic of your love story with our cinematic wedding and post-wedding photoshoots. From stunning romantic moments in picturesque locations to documenting your journey, we ensure every milestone is beautifully preserved. Trust us to create unique, breathtaking memories of your special day together."
+            />
+            <ServiceSection
+              title="Kids & Portfolio"
+              description="Capture the magic of your love story with our cinematic wedding and post-wedding photoshoots. From stunning romantic moments in picturesque locations to documenting your journey, we ensure every milestone is beautifully preserved. Trust us to create unique, breathtaking memories of your special day together."
+            />
+          </div>
+
+          {/* Image section */}
+          <div className="mt-8 md:mt-0">
+            <img
+              src={aboutServiceImage}
+              alt="A visual representation of the services we offer"
+              className="shadow-lg w-full max-h-[670px] object-cover"
+            />
+          </div>
+        </div>
+      </section>
+      </div>
+      <div className="bg-[#4ca9b4] h-[80vh] mt-24 font-abril flex flex-col items-center justify-center">
+        <h2 className="text-5xl">
+          Bringing your vision to life through every shot.
+        </h2>
+        <p className="font-roboto mt-8 text-2xl">
+          Through creative ideas, innovation & sheer determination
+        </p>
+        <Link to="/contact">
+          <button className="mt-8 font-display text-lg font-semibold bg-transparent text-white py-2 px-6 border-2 border-white hover:bg-yellow-500">
+            CONTACT US
+          </button>
+        </Link>
+      </div>
+      <QuickLinks />
     </div>
   );
 }
