@@ -2,6 +2,7 @@ import React from "react";
 import {Link } from "react-router-dom";
 import galleyMainPhoto from "../../assets/Pks_Photos/PKs_Clean_Photos/Gallery/galleryPhoto.jpg";
 import MasonaryGrid from "../../components/Gallery_Compo/MasonaryGrid";
+import QuickLinks from "../../components/Hero_Section/QuickLinks"
 
 const gallery = () => {
   return (
@@ -76,6 +77,7 @@ const gallery = () => {
           </button>
         </Link>
       </div>
+      <QuickLinks />
     </div>
   );
 };

@@ -4,6 +4,7 @@ import About from "./pages/Aboutus_Page/About";
 import Contact from "./pages/Contact_Page/Contact";
 import CinematicVideo from "./pages/CinematicWedding_Page/CinematicVideo"
 import Gallery from "./pages/Gallery_Page/gallery"
+import Services from "./pages/Services_Page/Services";
 
 // Routes array with path and component mappings
 const routes = [
@@ -26,7 +27,12 @@ const routes = [
   {
     path: "/gallery",
     element: <Gallery />,
-  }
+  },
+  {
+    path: "/services",
+    element: <Services />,
+  },
+  
 ];
 
 export default routes;

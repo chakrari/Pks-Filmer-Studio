@@ -8,6 +8,7 @@ import googlemapImage from "../../assets/Pks_Photos/PKs_Clean_Photos/Contact_Us/
 import facebookImage from "../../assets/Pks_Photos/PKs_Clean_Photos/Contact_Us/facebook.png";
 import instagramImage from "../../assets/Pks_Photos/PKs_Clean_Photos/Contact_Us/instagram.png";
 import googleImage from "../../assets/Pks_Photos/PKs_Clean_Photos/Contact_Us/google.png";
+import QuickLinks from "../../components/Hero_Section/QuickLinks";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -26,7 +27,7 @@ const Contact = () => {
   const handleModalClose = () => {
     document.body.classList.remove("no-scroll");
     setShowModal(false);
-    setFormData({ name: "", email: "", subject: "", message: "" }); 
+    setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
   const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -53,7 +54,7 @@ const Contact = () => {
       alert("Please enter a valid email address.");
       return; // Prevent form submission if email is invalid
     }
-        handleModalOpen();
+    handleModalOpen();
   };
 
   return (
@@ -363,6 +364,7 @@ const Contact = () => {
           {showModal && <Modal onClose={handleModalClose} />}
         </div>
       </form>
+      <QuickLinks />
     </div>
   );
 };
