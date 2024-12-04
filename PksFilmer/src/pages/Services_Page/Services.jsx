@@ -1,5 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import servicePhoto from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/serviceImage.jpg";
+import weddingService from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/weddingServiceImage.jpg";
+import preweddingService from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/preweddingServiceImage.jpg";
+import kidsService from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/kidsServiceImage.jpg";
+import eventService from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/eventServiceImage.jpg";
+import productService from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/productServiceImage.jpg";
+import portfolioService from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/portfolioServiceImage.jpg";
+import Quicklinks from "../../components/Hero_Section/QuickLinks";
 
 const Services = () => {
   return (
@@ -45,7 +53,104 @@ const Services = () => {
           </div>
         </div>
       </div>
-      
+      <div className="grid grid-cols-1 md:grid-cols-3 mt-16 gap-x-16 items-center justify-center gap-y-20 px-16">
+        <div className="flex flex-col text-center">
+          <img src={weddingService} className="" />
+          <h2 className="mt-4 text-3xl font-abril">
+            Wedding <span className="block">Photography</span>
+          </h2>
+          <p className="mt-4 text-lg">
+            Capture your love story from “I do” to forever. We offer cinematic
+            wedding photography that reflects every emotion, from heartfelt vows
+            to joyful celebrations. Let us document every unique chapter, even
+            with a creative post-wedding shoot.
+          </p>
+        </div>
+        <div className="flex flex-col text-center">
+          <img src={preweddingService} />
+          <h2 className="mt-4 text-3xl font-abril">Pre Wedding Shoot</h2>
+          <p className="mt-4 text-lg">
+            Create timeless memories in a romantic, scenic setting before the
+            big day. Our pre-wedding shoots capture candid, cinematic moments,
+            adding a touch of magic to your journey with stunning backdrops and
+            natural chemistry.
+          </p>
+        </div>
+        <div className="flex flex-col text-center">
+          <img src={kidsService} className="object-cover h-[35vh]" />
+          <h2 className="mt-4 text-3xl font-abril">Kids Photography</h2>
+          <p className="mt-4 text-lg">
+            Preserve those fleeting baby smiles and pure innocence with our
+            newborn and baby photography. We capture each tiny milestone with
+            gentle care, creating treasured memories of your little one’s early
+            days.
+          </p>
+        </div>
+        <div className="flex flex-col text-center">
+          <img src={eventService} />
+          <h2 className="mt-4 text-3xl  font-abril">Event Photography</h2>
+          <p className="mt-4 text-lg">
+            Our event photography covers every detail, from grand moments to
+            small nuances. With advanced equipment, including drones and DSLRs,
+            we ensure your event is captured with clarity, precision, and
+            passion.
+          </p>
+        </div>
+        <div className="flex flex-col text-center mt-7">
+          <img src={productService} />
+          <h2 className="mt-4 text-3xl  font-abril">Product Photography</h2>
+          <p className="mt-4 text-lg">
+            Showcase your products with style. From lighting to creative
+            backdrops, we bring out the best in each item, crafting eye-catching
+            visuals ideal for catalogs, brochures, websites, or social media.
+            Let us turn your products into stunning visual stories.
+          </p>
+        </div>
+        <div className="flex flex-col text-center">
+          <img src={portfolioService} />
+          <h2 className="mt-4 text-3xl  font-abril">Portfolio Shoot</h2>
+          <p className="mt-4 text-lg">
+            Highlight your best features with professional, creative portfolio
+            shoots. We combine expert lighting, technique, and editing to
+            deliver exceptional results, perfect for models looking to stand out
+            through captivating images.
+          </p>
+        </div>
+      </div>
+      <div className="bg-[#4ca9b4] h-[30vh] mt-24 font-abril gap-32 flex flex-row items-center justify-center">
+        <h2 className="text-5xl">We’re available for any project</h2>
+        <Link to="https://wa.me/7980108976">
+          <button className="mt-2 font-display text-lg font-semibold bg-transparent text-white py-4 px-10 border-2 border-white hover:bg-yellow-500">
+            GET IN TOUCH
+          </button>
+        </Link>
+      </div>
+      <div className="py-16 px-8 lg:px-32 mt-16">
+        <div className="text-center mb-12">
+          <h2 className="text-5xl font-bold mb-4">How it Works</h2>
+          <p className="text-lg leading-relaxed max-w-18xl mx-auto">
+            <span className="text-yellow-400 text-8xl">“</span>
+            Our photography process is crafted to capture every moment with
+            artistry and precision. We focus on understanding your unique
+            vision, ensuring each step leads to stunning results and a memorable
+            experience.
+          </p>
+        </div>
+      </div>
+      <div className="bg-[#4ca9b4] h-[80vh] mt-24 font-abril flex flex-col items-center justify-center">
+        <h2 className="text-5xl">
+          Bringing your vision to life through every shot.
+        </h2>
+        <p className="font-roboto mt-8 text-2xl">
+          Through creative ideas, innovation & sheer determination
+        </p>
+        <Link to="/contact">
+          <button className="mt-8 font-display text-lg font-semibold bg-transparent text-white py-2 px-6 border-2 border-white hover:bg-yellow-500">
+            CONTACT US
+          </button>
+        </Link>
+      </div>
+      <Quicklinks />
     </div>
   );
 };
