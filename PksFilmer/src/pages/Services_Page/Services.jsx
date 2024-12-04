@@ -7,6 +7,10 @@ import kidsService from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photo
 import eventService from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/eventServiceImage.jpg";
 import productService from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/productServiceImage.jpg";
 import portfolioService from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/portfolioServiceImage.jpg";
+import consultation from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/consultation.svg";
+import scout from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/scout.svg";
+import create from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/create.svg"
+import capture from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/capture.svg";
 import Quicklinks from "../../components/Hero_Section/QuickLinks";
 
 const Services = () => {
@@ -106,9 +110,9 @@ const Services = () => {
             Let us turn your products into stunning visual stories.
           </p>
         </div>
-        <div className="flex flex-col text-center">
+        <div className="flex flex-col text-center mt-8">
           <img src={portfolioService} />
-          <h2 className="mt-4 text-3xl  font-abril">Portfolio Shoot</h2>
+          <h2 className="mt-4 text-3xl font-abril">Portfolio Shoot</h2>
           <p className="mt-4 text-lg">
             Highlight your best features with professional, creative portfolio
             shoots. We combine expert lighting, technique, and editing to
@@ -137,6 +141,22 @@ const Services = () => {
           </p>
         </div>
       </div>
+      <div className="flex flex-row space-x-4 p-4">
+  <div className="w-16 h-16 bg-teal-500 rounded-full flex items-center justify-center">
+    <img src={consultation} alt="Consultation" className="w-8 h-8 fill-w" />
+  </div>
+  <div className="w-16 h-16 bg-teal-500 rounded-full flex items-center justify-center">
+    <img src={scout} alt="Scout" className="w-8 h-8" />
+  </div>
+  <div className="w-16 h-16 bg-teal-500 rounded-full flex items-center justify-center">
+    <img src={create} alt="Create" className="w-8 h-8" />
+  </div>
+  <div className="w-16 h-16 bg-teal-500 rounded-full flex items-center justify-center">
+    <img src={capture} alt="Capture" className="w-8 h-8" />
+  </div>
+</div>
+
+
       <div className="bg-[#4ca9b4] h-[80vh] mt-24 font-abril flex flex-col items-center justify-center">
         <h2 className="text-5xl">
           Bringing your vision to life through every shot.
