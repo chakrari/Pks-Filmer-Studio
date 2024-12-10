@@ -9,9 +9,37 @@ import productService from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Ph
 import portfolioService from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/portfolioServiceImage.jpg";
 import consultation from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/consultation.svg";
 import scout from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/scout.svg";
-import create from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/create.svg"
+import create from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/create.svg";
 import capture from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/capture.svg";
 import Quicklinks from "../../components/Hero_Section/QuickLinks";
+import Testimonials from "../../components/Testimonial/TestimonialSlider";
+
+const processes = [
+  {
+    icon: consultation, // Replace with the path or import of your icon
+    title: "Consultation",
+    description:
+      "We begin by discussing your vision, themes, and preferences, allowing us to understand your unique story and what you want captured.",
+  },
+  {
+    icon: scout,
+    title: "Scout",
+    description:
+      "We visit potential shooting locations to assess lighting, backgrounds, and composition, ensuring every scene is perfect for your vision.",
+  },
+  {
+    icon: create,
+    title: "Create",
+    description:
+      "Our team designs each shot with care, arranging lighting, props, and angles to highlight the beauty of your special moments.",
+  },
+  {
+    icon: capture,
+    title: "Capture",
+    description:
+      "On the day of the shoot, we bring your vision to life, capturing authentic emotions and stunning images that tell your story.",
+  },
+];
 
 const Services = () => {
   return (
@@ -141,23 +169,43 @@ const Services = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-row space-x-4 p-4">
-  <div className="w-16 h-16 bg-teal-500 rounded-full flex items-center justify-center">
-    <img src={consultation} alt="Consultation" className="w-8 h-8 fill-w" />
-  </div>
-  <div className="w-16 h-16 bg-teal-500 rounded-full flex items-center justify-center">
-    <img src={scout} alt="Scout" className="w-8 h-8" />
-  </div>
-  <div className="w-16 h-16 bg-teal-500 rounded-full flex items-center justify-center">
-    <img src={create} alt="Create" className="w-8 h-8" />
-  </div>
-  <div className="w-16 h-16 bg-teal-500 rounded-full flex items-center justify-center">
-    <img src={capture} alt="Capture" className="w-8 h-8" />
-  </div>
-</div>
-
-
-      <div className="bg-[#4ca9b4] h-[80vh] mt-24 font-abril flex flex-col items-center justify-center">
+      <div className="flex flex-wrap justify-between gap-8 px-14 py-10 text-white">
+        {processes.map((process, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center max-w-[300px] text-center"
+          >
+            <div className="w-16 h-16 bg-[#47C7D1] rounded-full flex items-center justify-center">
+              <img
+                src={process.icon}
+                alt={process.title}
+                className="w-8 h-8 invert text-white"
+              />
+            </div>
+            <h2 className="font-bold font-abril text-3xl mt-4">
+              {process.title}
+            </h2>
+            <p className="text-lg mt-3">{process.description}</p>
+          </div>
+        ))}
+      </div>
+      {/* <div className="mt-10">
+        <h2 className="font-bold font-abril text-2xl text-center">Testimonials</h2>
+        <p className="font-roboto text-center">CLIENTS LOVE US</p>
+        <div className="mb-96 -mt-10">
+      <Testimonials />
+      </div>
+      </div> */}
+      <div className="mt-60">
+        <h2 className="font-bold font-abril text-4xl text-center">
+          Testimonials
+        </h2>
+        <p className="font-roboto text-center mt-4 text-lg">CLIENTS LOVE US</p>
+        <div className="-mt-10 mb-96">
+          <Testimonials />
+        </div>
+      </div>
+      <div className="bg-[#4ca9b4] h-[80vh] font-abril flex flex-col items-center justify-center">
         <h2 className="text-5xl">
           Bringing your vision to life through every shot.
         </h2>
