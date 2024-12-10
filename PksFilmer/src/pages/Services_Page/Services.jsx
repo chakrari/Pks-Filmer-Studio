@@ -189,13 +189,6 @@ const Services = () => {
           </div>
         ))}
       </div>
-      {/* <div className="mt-10">
-        <h2 className="font-bold font-abril text-2xl text-center">Testimonials</h2>
-        <p className="font-roboto text-center">CLIENTS LOVE US</p>
-        <div className="mb-96 -mt-10">
-      <Testimonials />
-      </div>
-      </div> */}
       <div className="mt-60">
         <h2 className="font-bold font-abril text-4xl text-center">
           Testimonials
