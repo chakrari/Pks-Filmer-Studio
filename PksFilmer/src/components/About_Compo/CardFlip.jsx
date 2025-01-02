@@ -1,18 +1,18 @@
 import React, { useState } from "react";
-import { aboutCard } from "../../aboutCardData"; // Assuming this file contains your card data
-import "../About_Compo/CardFlip.css"; // Ensure this CSS file includes necessary styles
+import { aboutCard } from "../../aboutCardData";
+import "../About_Compo/CardFlip.css";
 
 const CardFlip = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
 
   return (
-    <div className="text-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-16 mt-20 mx-14 ">
+    <div className="text-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-6 mt-10 px-4 sm:px-6 md:px-14">
       {aboutCard.map((card) => (
         <div
           key={card.id}
           onMouseEnter={() => setHoveredCard(card.id)}
           onMouseLeave={() => setHoveredCard(null)}
-          className="relative perspective w-[70vh] h-[50vh]"
+          className="relative perspective w-full max-w-[320px] h-[300px] mx-auto"
         >
           <div
             className={`relative w-full h-full transform-style-preserve-3d transition-transform duration-500 ${
@@ -36,7 +36,6 @@ const CardFlip = () => {
           </div>
         </div>
       ))}
-      
     </div>
   );
 };
