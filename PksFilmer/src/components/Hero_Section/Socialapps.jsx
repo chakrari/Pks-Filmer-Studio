@@ -51,7 +51,7 @@ const Socialapps = () => {
   const icons = [
     {
       icon: <FcGoogle size="20" />,
-      link: "https://www.google.com/maps/place/PKS+Filmer/",
+      link: "https://www.google.com/maps/place/PKS+Filmer/@22.4806972,88.3372948,17z/data=!3m1!4b1!4m6!3m5!1s0x3a027144d1fcdc1b:0x123657d378866540!8m2!3d22.4806972!4d88.3372948!16s%2Fg%2F11rs2b8r8s?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D",
       bgColor: "bg-white",
       hoverColor: "hover:bg-gray-400",
       tooltip: "Google Reviews",
