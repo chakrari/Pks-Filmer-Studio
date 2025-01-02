@@ -1,15 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background-color: black;
-    font-family: 'poppins',sabs-serif;
-    color: white;
+/* Global reset for margin and padding */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* * {
+  border: 1px solid red;
+} */
+
+/* Body styles */
+body {
+  background-color: black;
+  font-family: 'Poppins', sans-serif; /* Fixed typo from 'sabs-serif' to 'sans-serif' */
+  color: white;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Prevent scrolling on elements with .no-scroll class */
 .no-scroll {
-    overflow: hidden;
+  overflow: hidden;
+}
+
+/* Ensure images don't overflow their containers */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Optional: prevent horizontal scroll on small screens */
+@media screen and (max-width: 768px) {
+  body, html {
+    padding: 0;
+    margin: 0;
   }
+
+  .w-full, .px-6, .sm:px-12, .text-center {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Ensure grid layout stacks vertically on smaller screens */
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
   
+}

@@ -23,26 +23,26 @@ import QuickLinks from "../Hero_Section/QuickLinks";
 
 const Hero = () => {
   return (
-    <div>
-      <div className="text-left m-24">
-        <h2 className="text-4xl font-bold mb-4 flex items-center justify-center">
+    <div className="">
+      <div className="mt-24 mx-4 md:mx-14 text-center md:text-center">
+        <h2 className="text-3xl font-bold mb-4 md:text-5xl">
           Welcome to Pks Filmer
         </h2>
-        <p className="text-lg leading-relaxed max-w-18xl mx-auto">
-          <span className="text-yellow-400 text-8xl">"</span>We create those
-          special moments that light up your life. Our artistry creates timeless
-          memories for you to cherish always. Our team has worked together since
-          2017 but our individual journeys go back much further. Through our
-          lenses we aim to share the pure joy of your special day.
+        <p className="text-lg leading-relaxed mt-10 ">
+          We create those special moments that light up your life. Our artistry
+          creates timeless memories for you to cherish always. Our team has
+          worked together since 2017 but our individual journeys go back much
+          further. Through our lenses we aim to share the pure joy of your
+          special day.
         </p>
       </div>
-      <div className="grid grid-cols-2 mt-10 leading-loose">
-        <div className="flex flex-col items-center justify-center">
-          <h2 className="text-5xl font-abril">Meet With Us</h2>
-          <h3 className="text-xl first:font-roboto text-center mt-4">
+      <div className="grid grid-cols-2 md:mt-16 mt-14 lg:mt-10 leading-loose">
+        <div className="flex flex-col items-center justify-center md:mt-16 lg:mt-0">
+          <h2 className="text-3xl font-abril md:text-5xl">Meet With Us</h2>
+          <h3 className="md:text-xl text-md first:font-roboto text-center mt-4">
             THE JOURNEY
           </h3>
-          <p className="mt-4 text-lg mx-16 text-center">
+          <p className="text-lg leading-relaxed text-center mx-1 mt-3 md:mx-16 md:mt-4">
             Since 2017, we’ve captured the joy-filled moments that make life
             unforgettable. With a passion for timeless memories, we turn
             fleeting instants into visual treasures, preserving your most
@@ -54,7 +54,8 @@ const Hero = () => {
             </button>
           </Link>
         </div>
-        <div>
+
+        <div className="mt-16">
           <img
             src={homeAboutImage}
             alt="kids image"
@@ -62,7 +63,19 @@ const Hero = () => {
           />
         </div>
       </div>
-      <div className="flex flex-wrap gap-2 justify-center mt-32">
+      <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] lg:grid-cols-[3fr_2fr] mt-24 lg:mt-36 text-white leading-loose mx-4 md:mx-16 lg:mx-20 gap-5">
+               <div className="font-abril text-2xl sm:text-3xl md:text-4xl border-slate-200 border-[8px] md:border-[12px] py-8 px-5 sm:py-10 sm:px-8 lg:py-20 lg:px-11 text-center md:text-left">
+          Capturing Love’s Finest Moments, Book Your Dream Shoot Today!
+        </div>
+       <div className="bg-[#4ca9b4] text-center flex items-center justify-center py-10 md:py-10 lg:py-0">
+          <Link to="https://wa.me/+917980108976">
+            <button className="mt-6 border-4 md:px-3 md:border-4 font-medium hover:bg-yellow-500 border-white bg-transparent shadow-lg px-4 sm:px-6 py-2">
+              PLAN MY SHOOT
+            </button>
+          </Link>
+        </div>
+      </div>
+      <div className="flex flex-wrap gap-8 md:gap-2 justify-center mt-32 mx-auto">
         <HomeCard img={home1} />
         <HomeCard img={home2} />
         <HomeCard img={home3} />
@@ -72,51 +85,41 @@ const Hero = () => {
         <HomeCard img={home7} />
         <HomeCard img={home8} />
       </div>
-      <div className="text-left m-24 ">
-        <h2 className="text-4xl font-bold mb-4 flex items-center justify-center">
-          Why Choose Us?
-        </h2>
-        <p className="text-lg leading-relaxed max-w-18xl mx-auto">
-          <span className="text-yellow-400 text-8xl">"</span>We create those
-          special moments that light up your life. Our artistryOur expert team
-          transforms your precious moments into timeless memories. With top-tier
-          skills and cutting-edge equipment, we don’t just take photos, we craft
-          visual stories that last a lifetime. From digital masterpieces to
-          stunning prints, we capture the essence of your special day. Our
-          photographers blend artistry with technology to bring out the best in
-          every shot. We’re not just preserving memories; we’re making dreams
-          tangible. Let our lenses work their magic at your next big event. Why
-          settle for the ordinary when you can have extraordinary? Your moments,
-          our passion, let’s create something truly unforgettable.
+      <div className="mt-24 mx-4 md:mx-14 text-center md:text-center">
+        <h2 className="text-3xl font-bold mb-4 md:text-5xl">Why Choose Us?</h2>
+        <p className="text-lg leading-relaxed mt-10">
+          We create those special moments that light up your life. Our
+          artistryOur expert team transforms your precious moments into timeless
+          memories. With top-tier skills and cutting-edge equipment, we don’t
+          just take photos, we craft visual stories that last a lifetime. From
+          digital masterpieces to stunning prints, we capture the essence of
+          your special day. Our photographers blend artistry with technology to
+          bring out the best in every shot. We’re not just preserving memories;
+          we’re making dreams tangible. Let our lenses work their magic at your
+          next big event. Why settle for the ordinary when you can have
+          extraordinary? Your moments, our passion, let’s create something truly
+          unforgettable.
         </p>
-        <div className="mt-4">
-          <Link to="https://wa.me/+917980108976">
-            <button className="text-lg font-semibold bg-transparent text-white py-2 px-6 rounded-full border-2 border-white hover:bg-yellow-500">
-              Book Us
-            </button>
-          </Link>
-        </div>
       </div>
-      <div className="m-24 text-center">
-        <h2 className="text-4xl font-bold mb-4 flex items-center justify-center">
+      <div className="mt-24 mx-4 md:mx-14 text-center md:text-center">
+        <h2 className="text-3xl font-bold mb-4 md:text-5xl">
           Skilled & Creative
         </h2>
-        <p className="text-lg leading-relaxed  mx-auto">
-          <span className="text-yellow-400 text-8xl">"</span>Choose our team for
-          a blend of expertise, creativity, and dedication. We capture life’s
-          most cherished moments with unmatched attention to detail, using the
-          latest equipment to deliver stunning, timeless visuals that reflect
-          the essence of your story.
+        <p className="text-lg leading-relaxed mt-10">
+          Choose our team for a blend of expertise, creativity, and dedication.
+          We capture life’s most cherished moments with unmatched attention to
+          detail, using the latest equipment to deliver stunning, timeless
+          visuals that reflect the essence of your stor
         </p>
         <div className="mt-4">
           <Team />
         </div>
       </div>
-      <div className="grid grid-cols-2 items-center justify-center mb-2">
+      <div className="grid grid-cols-2 items-center justify-center mb-2 w-full mt-16">
         <div>
-          <img src={homeServiceImage} className="h-[80vh]" />
+          <img src={homeServiceImage} className="md:h-[80vh] h-[30vh] w-full" />
         </div>
-        <div className="text-center h-[80vh] bg-[#4ca9b4] py-20">
+        <div className="text-center md:h-[80vh] bg-[#4ca9b4] py-20">
           <h2 className="font-abril text-5xl">Quality Services</h2>
           <h3 className="font-roboto text-xl mt-4">
             Our services & Core Values
@@ -133,19 +136,20 @@ const Hero = () => {
             <button className="mt-6 border-2 font-medium hover:bg-yellow-500 border-white bg-transparent shadow-lg object-cover px-6 py-2">
               OUR SERVICES
             </button>
-          </Link>
+          </Link>{" "}
         </div>
       </div>
-      <div className="py-16 px-16 mt-32">
-        <div className="text-left mb-12 ">
-          <h2 className="text-5xl font-bold mb-4">Other Areas of Expertise</h2>
-          <p className="text-lg leading-relaxed max-w-18xl mx-auto">
-            <span className="text-yellow-400 text-8xl">“</span>
+      <div className="py-16 px-16 md:mt-32">
+        <div className="text-center mb-12 ">
+          <h2 className="text-3xl font-bold mb-4 md:text-5xl">
+            Other Areas of Expertise
+          </h2>
+          <p className="text-lg leading-relaxed mt-10">
             Apart from the event, portfolio and many other photography styles,
             you can be assured of the following touches in our work.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-16 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-16 mt-10">
           {/* Amazing Photography */}
           <div className="text-center">
             <img src={Amazing} alt="Amazing" className="w-24 h-24 mx-auto" />
@@ -164,7 +168,7 @@ const Hero = () => {
           <div className="text-center">
             <img src={Care} alt="Caring" className="w-24 h-24 mx-auto" />
             <h3 className="text-2xl font-semibold mb-4 mt-4">
-              We Care About You
+              We Care About You{" "}
             </h3>
             <p className="text-base">
               We are much over the cliched give and take type of relationship in
@@ -173,7 +177,6 @@ const Hero = () => {
               of trust.
             </p>
           </div>
-
           {/* We Enjoy Travelling */}
           <div className="text-center">
             <img src={Travel} alt="Travelling" className="w-24 h-24 mx-auto" />
@@ -192,7 +195,7 @@ const Hero = () => {
           <div className="text-center">
             <img src={Time} alt="Time" className="w-24 h-24 mx-auto" />
             <h3 className="text-2xl font-semibold mb-4 mt-4">
-              We Respect Your Time
+              We Respect Your Time{" "}
             </h3>
             <p className="text-base">
               We believe that time is indeed money. And we understand how
@@ -235,28 +238,27 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="m-24 text-center">
-        <h2 className="text-4xl font-bold mb-4 flex items-center justify-center">
+      <div className="mt-24 mx-4 md:mx-14 text-center md:text-center">
+        <h2 className="text-3xl font-bold mb-4 md:text-5xl">
           We Create Lasting Memories Together
         </h2>
-        <p className="text-lg leading-relaxed  mx-auto">
-          <span className="text-yellow-400 text-8xl">"</span>We go beyond
-          capturing images, focusing on building connections, respecting your
-          time, and embracing every emotion. Whether it’s traveling to your
-          dream location or helping you feel comfortable, our dedicated team
-          ensures timeless, heartfelt memories for you.
+        <p className="text-lg leading-relaxed mt-10">
+          We go beyond capturing images, focusing on building connections,
+          respecting your time, and embracing every emotion. Whether it’s
+          traveling to your dream location or helping you feel comfortable, our
+          dedicated team ensures timeless, heartfelt memories for yo
         </p>
       </div>
       <div className="grid grid-cols-2">
         <section className="mt-36">
-          <h2 class="text-3xl font-bold text-center ml-10 text-white drop-shadow-lg">
+          <h2 class="md:text-3xl text-2xl font-bold text-center md:ml-10 text-white drop-shadow-lg">
             Lens & Light: Capturing Life in <br />
-            <span class="block">Focus</span>
+            <span className="block">Focus</span>
           </h2>
-          <div className="flex items-center justify-center mt-4 ">
-            <div className="relative h-80 ml-14 w-full ">
+          <div className="flex items-center justify-center md:mt-4 mt-8">
+            <div className="md:relative h-50 md:h-[60vh] lg:h-[60vh] md:ml-14 mx-8 w-full">
               <iframe
-                className="absolute w-full h-[95%] border-none"
+                className=" md:absolute w-full h-[95%] border-none"
                 src="https://www.youtube.com/embed/mIcQUsWoxc8"
                 title="Youtube video"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -281,15 +283,17 @@ const Hero = () => {
           <TestimonialSlider />
         </div>
       </div>
-      <div className="bg-[#4ca9b4] h-[80vh] mt-24 font-abril flex flex-col items-center justify-center">
-        <h2 className="text-5xl">
+
+      <div className="bg-[#4ca9b4] md:h-[80vh] h-[50vh] md:mt-24 mt-14 font-abril flex flex-col items-center justify-center md:items-center md:justify-center text-center">
+        <h2 className="text-3xl md:text-5xl">
+          {" "}
           Bringing your vision to life through every shot.
         </h2>
-        <p className="font-roboto mt-8 text-2xl">
-          Through creative ideas, innovation & sheer determination
+        <p className="font-roboto mt-8 text-xl mx-11 text-gray-300 tracking-widest">
+          THROUGH CREATIVE IDEAS, INNOVATION & SHEER DETERMINATION
         </p>
         <Link to="/contact">
-          <button className="mt-8 font-display text-lg font-semibold bg-transparent text-white py-2 px-6 border-2 border-white hover:bg-yellow-500">
+          <button className="mt-8 font-display text-lg font-semibold bg-transparent text-white py-2 px-6 border-2 border-white hover:bg-yellow-500 ">
             CONTACT US
           </button>
         </Link>

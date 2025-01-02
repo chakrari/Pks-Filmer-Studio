@@ -9,7 +9,7 @@ const Team = () => {
         {teams.map((team) => (
           <div
             key={team.id}
-            className="text-center w-40 flex flex-col items-center"
+            className="text-center w-full sm:w-48 md:w-40 flex flex-col md:flex-col items-center"
           >
             {/* Profile Image */}
             <img
@@ -18,8 +18,10 @@ const Team = () => {
               className="rounded-full shadow-lg mb-4 w-32 h-32 object-cover border-4 border-gray-700"
             />
             {/* Team Name and Role */}
-            <h2 className="text-xl font-semibold">{team.name}</h2>
-            <h3 className="text-sm font-medium text-gray-500">{team.role}</h3>
+            <div className="text-center">
+              <h2 className="text-xl font-semibold">{team.name}</h2>
+              <h3 className="text-sm font-medium text-gray-500">{team.role}</h3>
+            </div>
           </div>
         ))}
       </div>

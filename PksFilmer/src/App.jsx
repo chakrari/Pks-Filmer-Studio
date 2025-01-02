@@ -9,7 +9,9 @@ const App = () => {
     <Router>
       {/* Navbar appears on every page */}
       <Navbar />
-      <Socialapps />
+      <div className="hidden md:block">
+        <Socialapps />
+      </div>
       <main className="App">
         <Routes>
           {routes.map(({ path, element }, index) => (

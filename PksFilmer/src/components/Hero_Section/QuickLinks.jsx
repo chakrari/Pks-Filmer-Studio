@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 const QuickLinks = () => {
   return (
-    <div className=" bg-gradient-to-b from-gray-800 to-black text-white p-10 mt-28 ">
-      <div className="grid grid-cols-3">
+    <div className="bg-gradient-to-b from-gray-800 to-black text-white p-6 sm:p-8 lg:p-10 mt-28">
+      <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:mx-10">
         {/* Quick Links Section */}
-        <div className="ml-10">
-          <h3 className="text-xl font-bold mb-4 pb-2 border-b-2 border-gray-600 inline-block w-60">
+        <div>
+          <h3 className="text-xl font-bold mb-4 pb-2 border-b-2 border-gray-600">
             Quick Links
           </h3>
           <ul className="space-y-3">
@@ -50,8 +50,8 @@ const QuickLinks = () => {
         </div>
 
         {/* Services Section */}
-        <div className="ml-20">
-          <h3 className="text-xl font-bold mb-4 pb-2 border-b-2 border-gray-600 inline-block w-60">
+        <div>
+          <h3 className="text-xl font-bold mb-4 pb-2 border-b-2 border-gray-600">
             Our Services
           </h3>
           <ul className="space-y-3">
@@ -89,36 +89,58 @@ const QuickLinks = () => {
         </div>
 
         {/* Follow Us Section */}
-        <div className="ml-36">
-          <h3 className="text-xl font-bold mb-4 pb-2 border-b-2 border-gray-600 inline-block w-60">
+        <div>
+          <h3 className="text-xl font-bold mb-4 pb-2 border-b-2 border-gray-600">
             Follow Us
           </h3>
           <ul className="space-y-3">
             <li>
-              <Link to="https://www.facebook.com/pksfilmer" className="hover:text-yellow-400">
+              <a
+                href="https://www.facebook.com/pksfilmer"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-yellow-400"
+              >
                 Facebook
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="https://www.youtube.com/@pksfilmer" className="hover:text-yellow-400">
+              <a
+                href="https://www.youtube.com/@pksfilmer"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-yellow-400"
+              >
                 YouTube
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="https://www.instagram.com/pks_filmer/" className="hover:text-yellow-400">
+              <a
+                href="https://www.instagram.com/pks_filmer/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-yellow-400"
+              >
                 Instagram
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="https://www.linkedin.com/in/pritam-kumar-shaw/" className="hover:text-yellow-400">
+              <a
+                href="https://www.linkedin.com/in/pritam-kumar-shaw/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-yellow-400"
+              >
                 LinkedIn
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
       </div>
-      <div className="text-center text-gray-500 font-bold text-xl mt-16 ">
-        © 2024 Pks Filmer. All rights reserved.
+
+      {/* Footer Section */}
+      <div className="text-center text-gray-500 font-bold text-lg mt-16">
+        © 2024 PKS Filmer. All rights reserved.
       </div>
       <div className="mt-10 flex items-center">
         <div className="bg-gray-400 h-1 w-full"></div>
@@ -127,7 +149,7 @@ const QuickLinks = () => {
         </span>
         <div className="bg-gray-400 h-1 w-full"></div>
       </div>
-      <div className="mt-8 flex items-center justify-center">
+      <div className="mt-8 flex items-center justify-center text-center">
         <h3 className="font-bold">
           Design & Developed by{" "}
           <a

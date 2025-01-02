@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../../assets/Pks_Photos/PKs_Clean_Photos/Logo/logo.png"
+import logo from "../../assets/Pks_Photos/PKs_Clean_Photos/Logo/logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import { FaArrowRight } from "react-icons/fa";
@@ -23,12 +23,16 @@ const Navbar = () => {
   // Automatically close nav dialog when resizing to desktop view
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 768) {
+      if (window.innerWidth >= 1024) {
         setIsNavDialogOpen(false);
-        setIsMobile(false); // Set to desktop view
+        setIsMobile(false);
+        document.body.style.overflow = ""; // Enable scrolling
+      } else if (window.innerWidth >= 768) {
+        setIsMobile(true); // Tablet view
+        setIsNavDialogOpen(false); // Ensure menu is closed
         document.body.style.overflow = ""; // Enable scrolling
       } else {
-        setIsMobile(true); // Set to mobile view
+        setIsMobile(true); // Mobile view
       }
     };
 
@@ -53,8 +57,6 @@ const Navbar = () => {
 
   // Track scroll position to hide/show navbar (only on desktop)
   useEffect(() => {
-    if (isMobile) return; // Skip the scroll effect on mobile
-
     const handleScroll = () => {
       if (window.scrollY === 0) {
         // At the top of the page, show the navbar
@@ -71,7 +73,8 @@ const Navbar = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [isMobile]);
+    // }
+  }, []);
 
   // Clean up scrolling restriction on unmount
   useEffect(() => {
@@ -82,40 +85,68 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 bg-transparent shadow-md transition-transform duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 bg-transparent shadow-md transition-transform duration-300  ${
         isNavbarVisible ? "transform-none" : "-translate-y-full"
-      }`}
+      } md:px-10 md:py-6 lg:px-12 `}
     >
-      <Link to="/" id="brand" className="flex gap-2 items-center">
-        <img className="object-cover max-w-12 max-h-12" src={logo} alt="Logo" />
+      {/* Logo Section */}
+      <Link to="/" id="brand" className="flex items-center ">
+        <img
+          className="object-cover w-12 h-12 md:w-14 md:h-14"
+          src={logo}
+          alt="Logo"
+        />
       </Link>
-      <div id="nav-menu" className="hidden md:flex gap-20">
+
+      {/* Navigation Links */}
+      <div
+        id="nav-menu"
+        className="hidden md:flex flex-1 justify-evenly items-center "
+      >
         <Link to="/" className="font-bold hover:text-primary cursor-pointer">
           Home
         </Link>
-        <Link to="/about" className="font-bold hover:text-primary cursor-pointer">
+        <Link
+          to="/about"
+          className="font-bold hover:text-primary cursor-pointer"
+        >
           About
         </Link>
-        <Link to="/gallery" className="font-bold hover:text-primary cursor-pointer">
+        <Link
+          to="/gallery"
+          className="font-bold hover:text-primary cursor-pointer"
+        >
           Gallery
         </Link>
-        <Link to="/services" className="font-bold hover:text-primary cursor-pointer">
+        <Link
+          to="/services"
+          className="font-bold hover:text-primary cursor-pointer"
+        >
           Services
         </Link>
-        <Link to="/cinematic-video" className="font-bold hover:text-primary cursor-pointer">
+        <Link
+          to="/cinematic-video"
+          className="font-bold hover:text-primary cursor-pointer"
+        >
           Cinematic Video
         </Link>
-        <Link to="/team" className="font-bold hover:text-primary cursor-pointer">
+        <Link
+          to="/team"
+          className="font-bold hover:text-primary cursor-pointer"
+        >
           Team
         </Link>
-        <Link to="/contact" className="font-bold hover:text-primary cursor-pointer">
+        <Link
+          to="/contact"
+          className="font-bold hover:text-primary cursor-pointer"
+        >
           Contact
         </Link>
       </div>
-      <button className="hidden md:flex gap-2 items-center border border-black px-6 py-2 rounded-lg hover:border-primary hover:bg-yellow-400">
+      {/* <button className="hidden md:flex gap-2 items-center border border-black px-6 py-2 rounded-lg hover:border-primary hover:bg-yellow-400">
         Book Us
         <FaArrowRight />
-      </button>
+      </button> */}
       <button
         className="p-2 md:hidden fixed top-4 right-4 z-50 text-white"
         onClick={handleMenu}
@@ -188,10 +219,10 @@ const Navbar = () => {
               Contact
             </Link>
           </div>
-          <button className="mt-6 w-full flex gap-2 text-white items-center px-6 py-4 rounded-lg hover:bg-primary">
+          {/* <button className="mt-6 w-full flex gap-2 text-white items-center px-6 py-4 rounded-lg hover:bg-primary">
             Book Us
             <FaArrowRight />
-          </button>
+          </button> */}
         </div>
       )}
     </nav>

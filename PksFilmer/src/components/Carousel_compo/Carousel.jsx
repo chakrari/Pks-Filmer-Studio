@@ -88,7 +88,7 @@ const Carousel = ({ slides }) => {
 
       <button
         type="button"
-        className="absolute top-1/2 right-0 sm:left-[90%] lg:left-[93%] z-30 flex items-center justify-center h-10 px-4 -translate-y-1/2 cursor-pointer group focus:outline-none"
+        className="absolute top-1/2 right-0 sm:left-[90%] lg:left-[93%] z-30 flex items-center justify-end h-10 px-4 -translate-y-1/2 cursor-pointer group focus:outline-none"
         data-carousel-next
         onClick={() =>
           handleSlideChange((currentSlide + 1) % slides.length)
