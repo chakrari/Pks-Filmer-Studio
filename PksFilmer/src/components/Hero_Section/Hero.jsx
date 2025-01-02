@@ -64,10 +64,10 @@ const Hero = () => {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] lg:grid-cols-[3fr_2fr] mt-24 lg:mt-36 text-white leading-loose mx-4 md:mx-16 lg:mx-20 gap-5">
-               <div className="font-abril text-2xl sm:text-3xl md:text-4xl border-slate-200 border-[8px] md:border-[12px] py-8 px-5 sm:py-10 sm:px-8 lg:py-20 lg:px-11 text-center md:text-left">
+        <div className="font-abril text-2xl sm:text-3xl md:text-4xl border-slate-200 border-[8px] md:border-[12px] py-8 px-5 sm:py-10 sm:px-8 lg:py-20 lg:px-11 text-center md:text-left">
           Capturing Love’s Finest Moments, Book Your Dream Shoot Today!
         </div>
-       <div className="bg-[#4ca9b4] text-center flex items-center justify-center py-10 md:py-10 lg:py-0">
+        <div className="bg-[#4ca9b4] text-center flex items-center justify-center py-10 md:py-10 lg:py-0">
           <Link to="https://wa.me/+917980108976">
             <button className="mt-6 border-4 md:px-3 md:border-4 font-medium hover:bg-yellow-500 border-white bg-transparent shadow-lg px-4 sm:px-6 py-2">
               PLAN MY SHOOT
@@ -246,7 +246,7 @@ const Hero = () => {
           We go beyond capturing images, focusing on building connections,
           respecting your time, and embracing every emotion. Whether it’s
           traveling to your dream location or helping you feel comfortable, our
-          dedicated team ensures timeless, heartfelt memories for yo
+          dedicated team ensures timeless, heartfelt memories for you.
         </p>
       </div>
       <div className="grid grid-cols-2">
@@ -267,9 +267,9 @@ const Hero = () => {
             </div>
           </div>
         </section>
-        <div>
+        <div className="">
           <h2
-            className="text-4xl font-bold mt-14 flex items-center justify-center "
+            className="text-4xl font-bold mt-14 md:mt-36 flex items-center justify-center "
             style={{ textShadow: "2px 2px 4px rgba(1, 1, 1, 1)" }}
           >
             Testimonials
