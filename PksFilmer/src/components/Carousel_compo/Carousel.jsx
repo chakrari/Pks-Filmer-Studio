@@ -60,7 +60,7 @@ const Carousel = ({ slides }) => {
       {/* Previous and Next Buttons */}
       <button
         type="button"
-        className="absolute top-1/2 left-0 z-30 flex items-center justify-center h-10 px-4 -translate-y-1/2 cursor-pointer group focus:outline-none"
+        className="absolute top-1/2 left-0 z-30 flex items-center justify-start h-10 px-4 -translate-y-1/2 cursor-pointer group focus:outline-none"
         data-carousel-prev
         onClick={() =>
           handleSlideChange((currentSlide - 1 + slides.length) % slides.length)
@@ -90,9 +90,7 @@ const Carousel = ({ slides }) => {
         type="button"
         className="absolute top-1/2 right-0 sm:left-[90%] lg:left-[93%] z-30 flex items-center justify-end h-10 px-4 -translate-y-1/2 cursor-pointer group focus:outline-none"
         data-carousel-next
-        onClick={() =>
-          handleSlideChange((currentSlide + 1) % slides.length)
-        }
+        onClick={() => handleSlideChange((currentSlide + 1) % slides.length)}
       >
         <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
           <svg
