@@ -23,7 +23,7 @@ function About() {
           style={{ backgroundImage: `url(${aboutPhoto})` }}
         ></div>
 
-        <div className="relative z-20 px-8 py-18 lg:px-20 text-white md:mt-[19vh] mt-[12vh]">
+        <div className="relative z-20 px-8 py-18 lg:px-20 text-white md:mt-[40vh] mt-[12vh]">
           <div className="text-left mx-auto">
             <h2
               className="text-4xl font-bold mt-16"

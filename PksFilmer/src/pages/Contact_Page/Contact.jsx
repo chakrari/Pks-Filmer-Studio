@@ -73,22 +73,18 @@ const Contact = () => {
         ></div>
 
         {/* Text Container */}
-        <div
-          className="relative z-20 p-18 lg:px-20 text-white"
-          style={{ marginTop: "19vh" }} // Adjust positioning if needed
-        >
-          <div className="text-down_left ml-5">
+        <div className="relative z-20 px-8 py-18 lg:px-20 text-white md:mt-[40vh] mt-[12vh]">
+          <div className="text-left mx-auto">
             <h2
-              className="text-4xl font-bold mt-16 "
+              className="text-4xl font-bold mt-8"
               style={{ textShadow: "2px 2px 4px rgba(1, 1, 1, 1)" }}
             >
               Contact Pks Filmer
             </h2>
             <p
-              className="text-lg"
+              className="text-lg mt-6"
               style={{ textShadow: "1px 1px 3px rgba(0, 0, 0, 0.6)" }}
             >
-              <span className="text-yellow-400 text-8xl">“</span>
               From the enchanting moments of your pre-wedding and wedding, to
               the joyful milestones like baby showers and rice ceremonies, or
               even capturing your unique style in a stunning portfolio—we bring
@@ -98,13 +94,14 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="text-left mt-16 ">
-        <h2 className="text-4xl font-bold mb-3 ml-20 lg:ml-32">Contact info</h2>
-        <p className="text-lg leading-relaxed max-w-18xl mb-10 ml-20 lg:ml-28">
-          <span className="text-yellow-400 text-8xl ">"</span>We are Listening
+      <div className="text-center mt-16">
+        <h2 className="text-4xl font-bold mb-2">Contact info</h2>
+        <p className="text-xl textleading-relaxed px-10 mt-10">
+          We are Listening
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-y-12 gap-x-16 ml-4 w-full">
+
+      <div className="grid grid-cols-3 gap-y-12 gap-x-16  mt-12 w-full">
         {/* Telephone */}
         <div className="flex flex-col items-center text-center">
           <img src={telephoneImage} alt="Telephone" className="h-16" />
@@ -148,7 +145,7 @@ const Contact = () => {
           </a>
           <p className="mt-2 text-2xl font-medium text-white">Visit Us</p>
           <a
-            className="text-lg hover:text-yellow-400 text-gray-500 mr-6"
+            className="text-lg hover:text-yellow-400 text-gray-500 md:mx-12 lg:mx-0 mx-0"
             href="https://www.google.com/maps/place/PKS+Filmer/@22.4807021,88.3347199,17z/data=!3m1!4b1!4m6!3m5!1s0x3a027144d1fcdc1b:0x123657d378866540!8m2!3d22.4806972!4d88.3372948!16s%2Fg%2F11rs2b8r8s?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
@@ -234,39 +231,39 @@ const Contact = () => {
           }}
         ></div>
         {/* Text Container with background for contrast */}
-        <div className="relative z-100 px-6 py-12">
-          <h2 className="text-4xl font-bold mb-3 ml-20 lg:ml-32 text-white">
+        <div className="relative z-100 px-4 sm:px-6 py-8 sm:py-12">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 text-white text-center sm:text-left md:mx-20 lg:mx-28">
             Book Us For an Event
           </h2>
-          <p className="text-lg leading-relaxed max-w-18xl mb-10 ml-20 lg:ml-28 text-white">
-            <span className="text-yellow-400 text-8xl ">"</span>Get your events
-            organised to perfection by team Pks Filmer
+          <p className="text-base sm:text-lg leading-relaxed max-w-full sm:max-w-2xl mb-6 text-white text-center sm:text-left md:mx-20 lg:mx-28">
+            Get your events organised to perfection by team Pks Filmer
           </p>
-          <button
-            className="text-lg font-semibold bg-transparent text-white py-2 px-6 rounded-full border-2 border-white hover:bg-yellow-500 ml-36"
-            onClick={() =>
-              window.open(
-                "https://wa.me/+917980108976?text=Hello, I would like to discuss more about the services.",
-                "_blank"
-              )
-            }
-          >
-            Let's discuss on Whatsapp
-          </button>
+          <div className="flex justify-center sm:justify-start md:mx-20 lg:mx-28">
+            <button
+              className="text-sm sm:text-lg font-semibold bg-transparent text-white py-2 px-4 sm:px-6 rounded-full border-2 border-white hover:bg-yellow-500"
+              onClick={() =>
+                window.open(
+                  "https://wa.me/+917980108976?text=Hello, I would like to discuss more about the services.",
+                  "_blank"
+                )
+              }
+            >
+              Let's discuss on Whatsapp
+            </button>
+          </div>
         </div>
       </div>
       <div className="text-left mt-24 ">
-        <h2 className="text-4xl font-bold mb-3 ml-20 lg:ml-32">
+        <h2 className="text-4xl font-bold mb-3 md:mx-20 mx-5">
           Book Your Dream Shoot Today!
         </h2>
-        <p className="text-lg leading-relaxed max-w-18xl mb-10 ml-20 lg:ml-28">
-          <span className="text-yellow-400 text-8xl ">"</span>Message us and we
-          will get back to you soon
+        <p className="text-lg leading-relaxed max-w-18xl mb-10 md:mx-20 mx-6">
+          Message us and we will get back to you soon
         </p>
       </div>
       <form
         onSubmit={handleSubmit}
-        className="space-y-6 px-4 sm:px-8 md:px-16 ml-16 "
+        className="space-y-6 px-4 sm:px-8 md:px-16 md:mx-5 mx-2"
       >
         {/* Horizontal Row of Input Fields for Desktop */}
         <div className="flex flex-wrap gap-4 lg:flex-nowrap lg:gap-6">
