@@ -1,9 +1,8 @@
 import React from "react";
 import cinematicPhoto from "../../assets/Pks_Photos/PKs_Clean_Photos/Cinematic_Video/cinematic.jpg";
 import { Link } from "react-router-dom";
-import QuickLinks from "../../components/Hero_Section/QuickLinks"
+import QuickLinks from "../../components/Hero_Section/QuickLinks";
 
-// Array of video sections
 const videoSections = [
   {
     videoUrl: "https://www.youtube.com/embed/mIcQUsWoxc8",
@@ -40,13 +39,9 @@ const CinematicVideo = () => {
           className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
           style={{ backgroundImage: `url(${cinematicPhoto})` }}
         ></div>
-
         {/* Text Container */}
-        <div
-          className="relative z-20 px-8 py-18 lg:px-20 text-white"
-          style={{ marginTop: "19vh" }} // Adjust positioning if needed
-        >
-          <div className="text-left ml-5">
+        <div className="relative z-20 px-8 py-18 lg:px-20 text-white md:mt-[19vh] mt-[12vh]">
+          <div className="text-left mx-auto">
             <h2
               className="text-4xl font-bold mt-16"
               style={{ textShadow: "2px 2px 4px rgba(1, 1, 1, 1)" }}
@@ -57,7 +52,6 @@ const CinematicVideo = () => {
               className="text-lg mt-6"
               style={{ textShadow: "1px 1px 3px rgba(0, 0, 0, 0.6)" }}
             >
-              <span className="text-yellow-400 text-8xl">“</span>
               Don’t we all hope for fairy tales becoming true somewhere? Doesn’t
               the filmy magic seem intriguing to most of us? We can exactly
               create the same magic with our lens-o-wands. And the memories of
@@ -66,16 +60,15 @@ const CinematicVideo = () => {
           </div>
         </div>
       </div>
-
-      <div className="text-center mt-20 px-8">
-        <h3 className="text-2xl font-semibold">
+      <div className="mx-4 md:mx-14 text-center md:text-center mb-12">
+        <h3 className="md:text-2xl text-xl font-semibold mt-20">
           CINEMATIC WEDDING VIDEOS BY PKS FILMER
         </h3>
-        <h2 className="text-5xl font-medium mt-1">
+        <h2 className="text-3xl font-bold mb-4 md:text-5xl mt-4">
           Geared up to deliver the best cinematic Wedding videos in Kolkata,
           which will make you fall in love every time you watch them
         </h2>
-        <p className="px-10 mt-10">
+        <p className="text-lg leading-relaxed mt-10 ">
           It can take a day or even a lifetime to find a soulmate. People start
           looking for that one special person, ever since the day they realize
           the other half of their soul is missing. The day two people get
@@ -97,13 +90,12 @@ const CinematicVideo = () => {
           more, because we know that “photographs just aren’t enough”.
         </p>
       </div>
-
       {/* Loop through each video section */}
       {videoSections.map((section, index) => (
-        <section key={index} className="mt-36">
+        <section key={index} className="mt-24 sm:mt-28 lg:mt-36">
           {/* Video iframe container */}
-          <div className="flex items-center justify-center m-14">
-            <div className="relative w-full h-[80vh] pt-[56.25%]">
+          <div className="flex items-center justify-center mx-4 sm:mx-14 lg:mx-14">
+            <div className="relative w-full h-0 pb-[56.25%] sm:pb-[50%] md:pb-[45%] lg:pb-[56.25%]">
               <iframe
                 className="absolute top-0 left-0 w-full h-full border-none"
                 src={section.videoUrl}
@@ -116,20 +108,23 @@ const CinematicVideo = () => {
           </div>
         </section>
       ))}
-      <div className="bg-[#4ca9b4] h-[80vh] font-abril flex flex-col items-center justify-center">
-        <h2 className="text-5xl">
+      <div className="bg-[#4ca9b4] md:h-[80vh] h-[50vh] md:mt-24 mt-24 font-abril flex flex-col items-center justify-center md:items-center md:justify-center text-center">
+        <h2 className="text-3xl md:text-5xl">
+          {" "}
           Bringing your vision to life through every shot.
         </h2>
-        <p className="font-roboto mt-8 text-2xl">
-          Through creative ideas, innovation & sheer determination
+        <p className="font-roboto mt-8 text-xl mx-11 text-gray-300 tracking-widest">
+          THROUGH CREATIVE IDEAS, INNOVATION & SHEER DETERMINATION
         </p>
         <Link to="/contact">
-          <button className="mt-8 font-display text-lg font-semibold bg-transparent text-white py-2 px-6 border-2 border-white hover:bg-yellow-500">
+          <button className="mt-8 font-display text-lg font-semibold bg-transparent text-white py-2 px-6 border-2 border-white hover:bg-yellow-500 ">
             CONTACT US
           </button>
         </Link>
       </div>
-      <QuickLinks />
+      <div>
+        <QuickLinks />
+      </div>
     </div>
   );
 };
