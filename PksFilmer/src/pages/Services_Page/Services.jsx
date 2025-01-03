@@ -58,22 +58,18 @@ const Services = () => {
         ></div>
 
         {/* Text Container */}
-        <div
-          className="relative z-20 p-18 lg:px-20 text-white"
-          style={{ marginTop: "19vh" }} // Adjust positioning if needed
-        >
-          <div className="text-down_left ml-5">
+        <div className="relative z-20 px-8 py-18 lg:px-20 text-white md:mt-[19vh] mt-[12vh]">
+          <div className="text-left mx-auto">
             <h2
-              className="text-4xl font-bold mt-16 "
+              className="text-4xl font-bold mt-8"
               style={{ textShadow: "2px 2px 4px rgba(1, 1, 1, 1)" }}
             >
               Services | Pks Filmer
             </h2>
             <p
-              className="text-lg"
+              className="text-lg mt-6"
               style={{ textShadow: "1px 1px 3px rgba(0, 0, 0, 0.6)" }}
             >
-              <span className="text-yellow-400 text-8xl">“</span>
               From the magical moments of your pre-wedding and wedding
               celebrations to cherished milestones like baby showers and rice
               ceremonies, we specialize in capturing every beautiful occasion.
@@ -85,13 +81,13 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 mt-16 gap-x-16 items-center justify-center gap-y-20 px-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-16 gap-x-8 gap-y-16 items-center justify-center px-4 sm:px-8 lg:px-16">
         <div className="flex flex-col text-center">
-          <img src={weddingService} className="" />
-          <h2 className="mt-4 text-3xl font-abril">
+          <img src={weddingService} className="object-cover" />
+          <h2 className="mt-4 text-2xl lg:text-3xl font-abril">
             Wedding <span className="block">Photography</span>
           </h2>
-          <p className="mt-4 text-lg">
+          <p className="mt-4 text-sm sm:text-base lg:text-lg">
             Capture your love story from “I do” to forever. We offer cinematic
             wedding photography that reflects every emotion, from heartfelt vows
             to joyful celebrations. Let us document every unique chapter, even
@@ -99,9 +95,11 @@ const Services = () => {
           </p>
         </div>
         <div className="flex flex-col text-center">
-          <img src={preweddingService} />
-          <h2 className="mt-4 text-3xl font-abril">Pre Wedding Shoot</h2>
-          <p className="mt-4 text-lg">
+          <img src={preweddingService} className="object-cover" />
+          <h2 className="mt-4 text-2xl lg:text-3xl font-abril">
+            Pre Wedding Shoot
+          </h2>
+          <p className="mt-4 text-sm sm:text-base lg:text-lg">
             Create timeless memories in a romantic, scenic setting before the
             big day. Our pre-wedding shoots capture candid, cinematic moments,
             adding a touch of magic to your journey with stunning backdrops and
@@ -109,9 +107,11 @@ const Services = () => {
           </p>
         </div>
         <div className="flex flex-col text-center">
-          <img src={kidsService} className="object-cover h-[35vh]" />
-          <h2 className="mt-4 text-3xl font-abril">Kids Photography</h2>
-          <p className="mt-4 text-lg">
+          <img src={kidsService} className="object-cover lg:h-[35vh] " />
+          <h2 className="mt-4 text-2xl lg:text-3xl font-abril">
+            Kids Photography
+          </h2>
+          <p className="mt-4 text-sm sm:text-base lg:text-lg">
             Preserve those fleeting baby smiles and pure innocence with our
             newborn and baby photography. We capture each tiny milestone with
             gentle care, creating treasured memories of your little one’s early
@@ -119,29 +119,35 @@ const Services = () => {
           </p>
         </div>
         <div className="flex flex-col text-center">
-          <img src={eventService} />
-          <h2 className="mt-4 text-3xl  font-abril">Event Photography</h2>
-          <p className="mt-4 text-lg">
+          <img src={eventService} className="object-cover" />
+          <h2 className="mt-4 text-2xl lg:text-3xl font-abril">
+            Event Photography
+          </h2>
+          <p className="mt-4 text-sm sm:text-base lg:text-lg">
             Our event photography covers every detail, from grand moments to
             small nuances. With advanced equipment, including drones and DSLRs,
             we ensure your event is captured with clarity, precision, and
             passion.
           </p>
         </div>
-        <div className="flex flex-col text-center mt-7">
-          <img src={productService} />
-          <h2 className="mt-4 text-3xl  font-abril">Product Photography</h2>
-          <p className="mt-4 text-lg">
+        <div className="flex flex-col text-center">
+          <img src={productService} className="object-cover" />
+          <h2 className="mt-4 text-2xl lg:text-3xl font-abril">
+            Product Photography
+          </h2>
+          <p className="mt-4 text-sm sm:text-base lg:text-lg">
             Showcase your products with style. From lighting to creative
             backdrops, we bring out the best in each item, crafting eye-catching
             visuals ideal for catalogs, brochures, websites, or social media.
             Let us turn your products into stunning visual stories.
           </p>
         </div>
-        <div className="flex flex-col text-center mt-8">
-          <img src={portfolioService} />
-          <h2 className="mt-4 text-3xl font-abril">Portfolio Shoot</h2>
-          <p className="mt-4 text-lg">
+        <div className="flex flex-col text-center">
+          <img src={portfolioService} className="object-cover" />
+          <h2 className="mt-4 text-2xl lg:text-3xl font-abril">
+            Portfolio Shoot
+          </h2>
+          <p className="mt-4 text-sm sm:text-base lg:text-lg">
             Highlight your best features with professional, creative portfolio
             shoots. We combine expert lighting, technique, and editing to
             deliver exceptional results, perfect for models looking to stand out
@@ -149,19 +155,21 @@ const Services = () => {
           </p>
         </div>
       </div>
-      <div className="bg-[#4ca9b4] h-[30vh] mt-24 font-abril gap-32 flex flex-row items-center justify-center">
-        <h2 className="text-5xl">We’re available for any project</h2>
+      <div className="bg-[#4ca9b4] h-[36vh] mt-24 font-abril flex flex-wrap gap-8 items-center justify-center px-4  lg:gap-[24vh] md:h-[40vh]">
+        <h2 className="text-3xl md:text-5xl text-center md:text-left">
+          We’re available for any project
+        </h2>
         <Link to="https://wa.me/7980108976">
-          <button className="mt-2 font-display text-lg font-semibold bg-transparent text-white py-4 px-10 border-2 border-white hover:bg-yellow-500">
+          <button className="font-display text-sm md:text-lg font-semibold bg-transparent text-white py-3 px-8 md:py-4 md:px-10 border-4 border-white hover:bg-yellow-500">
             GET IN TOUCH
           </button>
         </Link>
       </div>
+
       <div className="py-16 px-8 lg:px-32 mt-16">
-        <div className="text-center mb-12">
+        <div className="text-center md:mb-12">
           <h2 className="text-5xl font-bold mb-4">How it Works</h2>
           <p className="text-lg leading-relaxed max-w-18xl mx-auto">
-            <span className="text-yellow-400 text-8xl">“</span>
             Our photography process is crafted to capture every moment with
             artistry and precision. We focus on understanding your unique
             vision, ensuring each step leads to stunning results and a memorable
@@ -189,29 +197,32 @@ const Services = () => {
           </div>
         ))}
       </div>
-      <div className="mt-60">
+      <div className="md:mt-60 mt-28">
         <h2 className="font-bold font-abril text-4xl text-center">
           Testimonials
         </h2>
         <p className="font-roboto text-center mt-4 text-lg">CLIENTS LOVE US</p>
-        <div className="-mt-10 mb-96">
+        <div className="-mt-10 lg:mb-44 md:mb-32 mb-40 ">
           <Testimonials />
         </div>
       </div>
-      <div className="bg-[#4ca9b4] h-[80vh] font-abril flex flex-col items-center justify-center">
-        <h2 className="text-5xl">
+      <div className="bg-[#4ca9b4] md:h-[80vh] h-[50vh] md:mt-24 mt-14 font-abril flex flex-col items-center justify-center md:items-center md:justify-center text-center">
+        <h2 className="text-3xl md:text-5xl">
+          {" "}
           Bringing your vision to life through every shot.
         </h2>
-        <p className="font-roboto mt-8 text-2xl">
-          Through creative ideas, innovation & sheer determination
+        <p className="font-roboto mt-8 text-xl mx-11 text-gray-300 tracking-widest">
+          THROUGH CREATIVE IDEAS, INNOVATION & SHEER DETERMINATION
         </p>
         <Link to="/contact">
-          <button className="mt-8 font-display text-lg font-semibold bg-transparent text-white py-2 px-6 border-2 border-white hover:bg-yellow-500">
+          <button className="mt-8 font-display text-lg font-semibold bg-transparent text-white py-2 px-6 border-2 border-white hover:bg-yellow-500 ">
             CONTACT US
           </button>
         </Link>
       </div>
-      <Quicklinks />
+      <div>
+        <Quicklinks />
+      </div>
     </div>
   );
 };
