@@ -67,7 +67,7 @@ const Services = () => {
               Services | Pks Filmer
             </h2>
             <p
-              className="text-lg mt-6"
+              className="text-lg mt-6 w-[40vw]"
               style={{ textShadow: "1px 1px 3px rgba(0, 0, 0, 0.6)" }}
             >
               From the magical moments of your pre-wedding and wedding
