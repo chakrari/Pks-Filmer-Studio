@@ -251,7 +251,7 @@ const Hero = () => {
       </div>
       <div className="grid grid-cols-2">
         <section className="mt-36">
-          <h2 class="md:text-3xl text-2xl font-bold text-center md:ml-10 text-white drop-shadow-lg">
+          <h2 className="md:text-3xl text-2xl font-bold text-center md:ml-10 text-white drop-shadow-lg">
             Lens & Light: Capturing Life in <br />
             <span className="block">Focus</span>
           </h2>

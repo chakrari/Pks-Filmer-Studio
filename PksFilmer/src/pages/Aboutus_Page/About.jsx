@@ -7,6 +7,7 @@ import aboutServiceImage from "../../assets/Pks_Photos/PKs_Clean_Photos/About_Us
 import { Link } from "react-router-dom";
 import QuickLinks from "../../components/Hero_Section/QuickLinks";
 
+// eslint-disable-next-line react/prop-types
 const ServiceSection = ({ title, description }) => (
   <div className="space-y-4">
     <h2 className="text-[#4ca9b4] text-4xl font-bold">{title}</h2>
