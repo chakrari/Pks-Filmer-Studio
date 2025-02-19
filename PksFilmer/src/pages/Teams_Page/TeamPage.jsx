@@ -23,15 +23,15 @@ const TeamPage = () => {
         <div className="flex justify-center">
           <div className="relative w-52 h-52 flex items-center justify-center rotate-45 border border-white bg-gray-800">
             <div
-              className="absolute w-64 h-44 bg-cover bg-center"
+              className="absolute w-60 h-44 bg-cover bg-center"
               style={{ backgroundImage: `url(${PritamPhoto})` }}
             ></div>
           </div>
         </div>
         <div className="text-center md:text-left">
-          <h1 className="text-4xl font-bold font-impact">Pritam Kumar Shaw</h1>
-          <p className="text-lg mt-3 mb-3 font-light">FOUNDER & CINEMATOGRAPHER</p>
-          <p className="text-lg leading-relaxed">
+          <h1 className="text-4xl font-bold font-impact text-center">Pritam Kumar Shaw</h1>
+          <p className="text-xl mt-3 mb-3 font-light text-center font-sans">FOUNDER & CINEMATOGRAPHER</p>
+          <p className="text-lg leading-relaxed text-justify">
             The visionary behind the lens, turning dreams into cinematic reality, capturing every love story with flair, and ensuring each moment is a masterpiece waiting to be unveiled.
           </p>
         </div>
