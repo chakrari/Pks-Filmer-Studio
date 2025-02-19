@@ -9,7 +9,7 @@ const videoSections = [
     title: "Cinematic Video 1",
   },
   {
-    videoUrl: "https://www.youtube.com/embed/pQbhEOSKVYI",
+    videoUrl: "https://www.youtube.com/embed/WqrViVtYMOc",
     title: "Cinematic Video 2",
   },
   {
@@ -40,7 +40,8 @@ const CinematicVideo = () => {
           style={{ backgroundImage: `url(${cinematicPhoto})` }}
         ></div>
         {/* Text Container */}
-        <div className="relative z-20 px-8 py-18 lg:px-20 text-white md:mt-[40vh] mt-[12vh]">
+        {/* <div className="relative z-20 px-8 py-18 lg:px-20 text-white md:mt-[40vh] mt-[12vh]"> */}
+        <div className="relative z-20 px-8 py-18 lg:px-20 text-white md:mt-[30vh] mt-[12vh]">
           <div className="text-left mx-auto">
             <h2
               className="text-4xl font-bold mt-16"
@@ -49,7 +50,7 @@ const CinematicVideo = () => {
               Cinematic Video Gallery | PKS
             </h2>
             <p
-              className="text-lg mt-6 w-[40vw]"
+              className="text-lg mt-6 text-justify md:w-[40vw]"
               style={{ textShadow: "1px 1px 3px rgba(0, 0, 0, 0.6)" }}
             >
               Don’t we all hope for fairy tales becoming true somewhere? Doesn’t

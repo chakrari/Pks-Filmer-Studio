@@ -3,6 +3,7 @@ import { IoMdClose } from "react-icons/io";
 
 const modal = ({onClose}) => {
   
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const modalRef = useRef();
 
   const closeModal = (e) => {
@@ -17,7 +18,7 @@ if(modalRef.current === e.target){
         <button onClick={onClose}><IoMdClose size={30} className="place-self-end"/></button>
         <div className="bg-indigo-600 rounded-xl px-20 py-10 gap-5 flex flex-col items-center justify-center">
             <h1 className="text-3xl font-extrabold text-center">Success! Your form has been submitted</h1>
-            <p className="text-2xl font-bold max-w-md text-center"> Thank you for taking the time to reach out to us. We'll be in touch shortly!</p>
+            <p className="text-2xl font-bold max-w-md text-center"> Thank you for taking the time to reach out to us. We will be in touch shortly!</p>
         </div>
       </div>
     </div>

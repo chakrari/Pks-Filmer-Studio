@@ -58,7 +58,7 @@ const Services = () => {
         ></div>
 
         {/* Text Container */}
-        <div className="relative z-20 px-8 py-18 lg:px-20 text-white md:mt-[40vh] mt-[12vh]">
+        <div className="relative z-20 px-8 py-18 lg:px-20 text-white md:mt-[30vh] mt-[12vh]">
           <div className="text-left mx-auto">
             <h2
               className="text-4xl font-bold mt-8"
@@ -67,7 +67,7 @@ const Services = () => {
               Services | Pks Filmer
             </h2>
             <p
-              className="text-lg mt-6 w-[40vw]"
+              className="text-lg mt-6 md:w-[40vw] text-justify"
               style={{ textShadow: "1px 1px 3px rgba(0, 0, 0, 0.6)" }}
             >
               From the magical moments of your pre-wedding and wedding
