@@ -67,14 +67,14 @@ const Services = () => {
               Services | Pks Filmer
             </h2>
             <p
-              className="text-lg mt-6"
+              className="text-lg mt-6 w-[40vw]"
               style={{ textShadow: "1px 1px 3px rgba(0, 0, 0, 0.6)" }}
             >
               From the magical moments of your pre-wedding and wedding
               celebrations to cherished milestones like baby showers and rice
               ceremonies, we specialize in capturing every beautiful occasion.
-              Whether you're looking to showcase your unique style in a stunning
-              portfolio or preserve unforgettable memories, we're here to bring
+              Whether you are looking to showcase your unique style in a stunning
+              portfolio or preserve unforgettable memories, we are here to bring
               your vision to life. Get in touch with us today to learn how we
               can make your moments truly unforgettable!
             </p>
@@ -95,11 +95,11 @@ const Services = () => {
           </p>
         </div>
         <div className="flex flex-col text-center">
-          <img src={preweddingService} className="object-cover" />
-          <h2 className="mt-4 text-2xl lg:text-3xl font-abril">
+          <img src={preweddingService} className="object-cover mt-4" />
+          <h2 className="mt-8 text-2xl lg:text-3xl font-abril">
             Pre Wedding Shoot
           </h2>
-          <p className="mt-4 text-sm sm:text-base lg:text-lg">
+          <p className="mt-10 text-sm sm:text-base lg:text-lg">
             Create timeless memories in a romantic, scenic setting before the
             big day. Our pre-wedding shoots capture candid, cinematic moments,
             adding a touch of magic to your journey with stunning backdrops and
@@ -107,11 +107,11 @@ const Services = () => {
           </p>
         </div>
         <div className="flex flex-col text-center">
-          <img src={kidsService} className="object-cover lg:h-[35vh] " />
-          <h2 className="mt-4 text-2xl lg:text-3xl font-abril">
+          <img src={kidsService} className="object-cover mt-4 lg:h-[35vh] " />
+          <h2 className="mt-10 text-2xl lg:text-3xl font-abril">
             Kids Photography
           </h2>
-          <p className="mt-4 text-sm sm:text-base lg:text-lg">
+          <p className="mt-8 text-sm sm:text-base lg:text-lg">
             Preserve those fleeting baby smiles and pure innocence with our
             newborn and baby photography. We capture each tiny milestone with
             gentle care, creating treasured memories of your little one’s early
@@ -131,7 +131,7 @@ const Services = () => {
           </p>
         </div>
         <div className="flex flex-col text-center">
-          <img src={productService} className="object-cover" />
+          <img src={productService} className="object-cover mt-8" />
           <h2 className="mt-4 text-2xl lg:text-3xl font-abril">
             Product Photography
           </h2>

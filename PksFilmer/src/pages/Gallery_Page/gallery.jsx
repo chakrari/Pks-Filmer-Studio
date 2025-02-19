@@ -24,13 +24,13 @@ const gallery = () => {
         <div className="relative z-20 px-8 py-18 lg:px-20 text-white md:mt-[40vh] mt-[12vh]">
           <div className="text-left mx-auto">
             <h2
-              className="text-4xl font-bold mt-16"
+              className="text-4xl font-bold mt-16 "
               style={{ textShadow: "2px 2px 4px rgba(1, 1, 1, 1)" }}
             >
               PORTFOLIO
             </h2>
             <p
-              className="text-lg mt-6"
+              className="text-lg mt-6 w-[40vw]"
               style={{ textShadow: "1px 1px 3px rgba(0, 0, 0, 0.6)" }}
             >
               At PKS Filmer, we believe photography is about telling stories and

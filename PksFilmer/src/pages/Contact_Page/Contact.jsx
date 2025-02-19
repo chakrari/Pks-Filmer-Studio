@@ -82,7 +82,7 @@ const Contact = () => {
               Contact Pks Filmer
             </h2>
             <p
-              className="text-lg mt-6"
+              className="text-lg mt-6 w-[40vw]"
               style={{ textShadow: "1px 1px 3px rgba(0, 0, 0, 0.6)" }}
             >
               From the enchanting moments of your pre-wedding and wedding, to
@@ -248,7 +248,7 @@ const Contact = () => {
                 )
               }
             >
-              Let's discuss on Whatsapp
+              Lets discuss on Whatsapp
             </button>
           </div>
         </div>
