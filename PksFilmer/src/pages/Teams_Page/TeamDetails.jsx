@@ -56,7 +56,7 @@ const teamMembers = [
 
 const TeamDetails = () => {
   return (
-    <div className="flex flex-col items-center justify-center px-6 py-12 space-y-12">
+    <div className="flex flex-col items-center justify-center px-6 py-12 space-y-48">
       {teamMembers.map((member, index) => (
         <div
           key={index}
