@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const QuickLinks = () => {
+
+  const getCurrentYear = () => new Date().getFullYear();
+ 
   return (
     <div className="bg-gradient-to-b from-gray-800 to-black text-white p-6 sm:p-8 lg:p-10 mt-28">
       <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:mx-10">
@@ -140,7 +143,7 @@ const QuickLinks = () => {
 
       {/* Footer Section */}
       <div className="text-center text-gray-500 font-bold text-lg mt-16">
-        © 2024 PKS Filmer. All rights reserved.
+        © {getCurrentYear()} PKS Filmer. All rights reserved.
       </div>
       <div className="mt-10 flex items-center">
         <div className="bg-gray-400 h-1 w-full"></div>

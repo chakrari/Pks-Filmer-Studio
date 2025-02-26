@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import contactPhoto from "../../assets/Pks_Photos/PKs_Clean_Photos/Contact_Us/contact.jpg";
 import contactSecondPhoto from "../../assets/Pks_Photos/PKs_Clean_Photos/Contact_Us/contactSecond.jpg";
 import Modal from "../../components/Contact_compo/modal";
@@ -11,6 +14,7 @@ import googleImage from "../../assets/Pks_Photos/PKs_Clean_Photos/Contact_Us/goo
 import QuickLinks from "../../components/Hero_Section/QuickLinks";
 
 const Contact = () => {
+  const form = useRef();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -19,10 +23,10 @@ const Contact = () => {
   });
   const [showModal, setShowModal] = useState(false);
 
-  const handleModalOpen = () => {
-    document.body.classList.add("no-scroll");
-    setShowModal(true);
-  };
+  // const handleModalOpen = () => {
+  //   document.body.classList.add("no-scroll");
+  //   setShowModal(true);
+  // };
 
   const handleModalClose = () => {
     document.body.classList.remove("no-scroll");
@@ -47,15 +51,75 @@ const Contact = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   // Check if the email matches the regex pattern
+  //   if (!emailRegex.test(formData.email)) {
+  //     alert("Please enter a valid email address.");
+  //     return; // Prevent form submission if email is invalid
+  //   }
+  //   handleModalOpen();
+  // };
+
+
+
+ const handleSubmit = (e) => {
     e.preventDefault();
+    
     // Check if the email matches the regex pattern
     if (!emailRegex.test(formData.email)) {
-      alert("Please enter a valid email address.");
+      toast.error("Please enter a valid email address.", {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
       return; // Prevent form submission if email is invalid
     }
-    handleModalOpen();
+    
+    emailjs
+      .sendForm(
+        "service_dmssha8", 
+        "template_lsq2m78", 
+        form.current, 
+        {
+          publicKey: "fZW_G5BIPwtV27E6k",
+        }
+      )
+      .then(
+        () => {
+          toast.success("Message sent successfully!", {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
+          setFormData({ name: "", email: "", subject: "", message: "" }); // Reset form
+          
+          // Optionally show modal on success
+          // handleModalOpen();
+        },
+        (error) => {
+          toast.error("Message sending failed! Try again.", {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
+          console.error("FAILED...", error.text);
+        }
+      );
   };
+
 
   return (
     <div>
@@ -262,6 +326,7 @@ const Contact = () => {
         </p>
       </div>
       <form
+      ref={form}
         onSubmit={handleSubmit}
         className="space-y-6 px-4 sm:px-8 md:px-16 md:mx-5 mx-2"
       >
@@ -362,6 +427,8 @@ const Contact = () => {
         </div>
       </form>
       <QuickLinks />
+
+      <ToastContainer />
     </div>
   );
 };
