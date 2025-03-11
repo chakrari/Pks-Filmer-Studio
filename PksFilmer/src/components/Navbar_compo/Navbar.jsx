@@ -107,7 +107,7 @@ const Navbar = () => {
           Home
         </Link>
         <Link
-          to="/about"
+          to="/aboutus"
           className="font-bold hover:text-primary cursor-pointer"
         >
           About
@@ -137,7 +137,7 @@ const Navbar = () => {
           Team
         </Link>
         <Link
-          to="/contact"
+          to="/contactus"
           className="font-bold hover:text-primary cursor-pointer"
         >
           Contact
@@ -183,37 +183,37 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              to="/about"
+              to="/aboutus"
               className="font-medium p-3 hover:bg-gray-700 block rounded-lg"
             >
               About
             </Link>
             <Link
-              to="#"
+              to="/gallery"
               className="font-medium p-3 hover:bg-gray-700 block rounded-lg"
             >
               Gallery
             </Link>
             <Link
-              to="#"
+              to="/services"
               className="font-medium p-3 hover:bg-gray-700 block rounded-lg"
             >
               Services & Packages
             </Link>
             <Link
-              to="#"
+              to="/cinematic-video"
               className="font-medium p-3 hover:bg-gray-700 block rounded-lg"
             >
               Cinematic Video
             </Link>
             <Link
-              to="#"
+              to="/team"
               className="font-medium p-3 hover:bg-gray-700 block rounded-lg"
             >
               Team
             </Link>
             <Link
-              to="#"
+              to="/contactus"
               className="font-medium p-3 hover:bg-gray-700 block rounded-lg"
             >
               Contact

@@ -14,11 +14,15 @@ const routes = [
     element: <Home />,
   },
   {
-    path: "/about",
+    path: "/home",
+    element: <Home />,
+  },
+  {
+    path: "/aboutus",
     element: <About />,
   },
   {
-    path: "/contact",
+    path: "/contactus",
     element: <Contact />,
   },
   {
