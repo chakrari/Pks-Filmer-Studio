@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import servicePhoto from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/serviceImage.jpg";
 import weddingService from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/weddingServiceImage.avif";
-import preweddingService from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/preweddingServiceImage.jpg";
+import preweddingService from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/preweddingServiceImage.avif";
 import kidsService from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/kidsServiceImage.jpg";
 import eventService from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/eventServiceImage.jpg";
 import productService from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/productServiceImage.avif";

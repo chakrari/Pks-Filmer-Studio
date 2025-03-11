@@ -1,16 +1,16 @@
 import React from "react";
 import galleryWideImage1 from "../../assets/Pks_Photos/PKs_Clean_Photos/Gallery/galleryWide1.jpg";
 import galleryWideImage2 from "../../assets/Pks_Photos/PKs_Clean_Photos/Gallery/galleryWide2.jpg";
-import galleryWideImage3 from "../../assets/Pks_Photos/PKs_Clean_Photos/Gallery/galleryWide3.jpg";
+import galleryWideImage3 from "../../assets/Pks_Photos/PKs_Clean_Photos/Gallery/galleryWide3.avif";
 import galleryWideImage4 from "../../assets/Pks_Photos/PKs_Clean_Photos/Gallery/galleryWide4.avif";
-import galleryWideImage5 from "../../assets/Pks_Photos/PKs_Clean_Photos/Gallery/galleryWide5.jpg";
-import galleryWideImage6 from "../../assets/Pks_Photos/PKs_Clean_Photos/Gallery/galleryWide6.jpg";
+import galleryWideImage5 from "../../assets/Pks_Photos/PKs_Clean_Photos/Gallery/galleryWide5.avif";
+import galleryWideImage6 from "../../assets/Pks_Photos/PKs_Clean_Photos/Gallery/galleryWide6.avif";
 import gallerySquareImage1 from "../../assets/Pks_Photos/PKs_Clean_Photos/Gallery/gallerySquare1.jpg";
 import gallerySquareImage2 from "../../assets/Pks_Photos/PKs_Clean_Photos/Gallery/gallerySquare2.avif";
 import gallerySquareImage3 from "../../assets/Pks_Photos/PKs_Clean_Photos/Gallery/gallerySquare3.jpg";
 import gallerySquareImage4 from "../../assets/Pks_Photos/PKs_Clean_Photos/Gallery/gallerySquare4.jpg";
 import gallerySquareImage5 from "../../assets/Pks_Photos/PKs_Clean_Photos/Gallery/gallerySquare5.jpg";
-import gallerySquareImage6 from "../../assets/Pks_Photos/PKs_Clean_Photos/Gallery/gallerySquare6.jpg";
+import gallerySquareImage6 from "../../assets/Pks_Photos/PKs_Clean_Photos/Gallery/gallerySquare6.avif";
 
 const images = [
   { id: 1, src: gallerySquareImage1, alt: "Pre-Wedding Image 1" },
