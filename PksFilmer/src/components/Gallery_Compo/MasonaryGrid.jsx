@@ -36,6 +36,7 @@ const MasonaryGrid = () => {
             src={image.src}
             alt={image.alt}
             className="w-full object-cover rounded-lg"
+            loading="lazy"
           />
         </div>
       ))}

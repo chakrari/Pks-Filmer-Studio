@@ -164,6 +164,7 @@ function About() {
             <div className="mt-8 md:mt-0">
               <img
                 src={aboutServiceImage}
+                loading="lazy" 
                 alt="A visual representation of the services we offer"
                 className="shadow-lg w-full max-h-[670px] object-cover"
               />

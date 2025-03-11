@@ -26,6 +26,7 @@ const TestimonialSlider = () => {
             {/* Profile Image */}
             <img
               src={review.image}
+              loading="lazy" 
               alt={`Profile of ${review.name}`}
               className="rounded-full shadow-lg mb-4 w-36 h-36 object-cover border-4 border-gray-700 mt-20"
             />

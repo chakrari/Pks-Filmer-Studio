@@ -24,10 +24,10 @@ const Contact = () => {
   });
   const [showModal, setShowModal] = useState(false);
 
-  // const handleModalOpen = () => {
-  //   document.body.classList.add("no-scroll");
-  //   setShowModal(true);
-  // };
+  const handleModalOpen = () => {
+    document.body.classList.add("no-scroll");
+    setShowModal(true);
+  };
 
   const handleModalClose = () => {
     document.body.classList.remove("no-scroll");
@@ -52,12 +52,11 @@ const Contact = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-
- const handleSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     // Check if the email matches the regex pattern
-    if (!emailRegex.test(formData.email)) {
+    if (!formData.email.trim() || !emailRegex.test(formData.email)) {
       toast.error("Please enter a valid email address.", {
         position: "top-right",
         autoClose: 3000,
@@ -69,12 +68,12 @@ const Contact = () => {
       });
       return; // Prevent form submission if email is invalid
     }
-    
+
     emailjs
       .sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID, 
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        form.current, 
+        form.current,
         {
           publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
         }
@@ -91,25 +90,27 @@ const Contact = () => {
             progress: undefined,
           });
           setFormData({ name: "", email: "", subject: "", message: "" }); // Reset form
-          
+
           // Optionally show modal on success
-          // handleModalOpen();
+          handleModalOpen();
         },
         (error) => {
-          toast.error("Message sending failed! Try again.", {
-            position: "top-right",
-            autoClose: 3000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
+          toast.error(
+            `Error: ${error.text || "Message sending failed! Try again."}`,
+            {
+              position: "top-right",
+              autoClose: 3000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+            }
+          );
           console.error("FAILED...", error.text);
         }
       );
   };
-
 
   return (
     <div>
@@ -158,7 +159,12 @@ const Contact = () => {
       <div className="grid grid-cols-3 gap-y-12 gap-x-16  mt-12 w-full">
         {/* Telephone */}
         <div className="flex flex-col items-center text-center">
-          <img src={telephoneImage} alt="Telephone" className="h-16" />
+          <img
+            src={telephoneImage}
+            alt="Telephone"
+            className="h-16"
+            aria-label="Discuss with us"
+          />
           <p className="mt-2 text-2xl font-medium text-white">Call Us</p>
           <p className=" ml-4 text-lg text-gray-500 hover:text-yellow-400">
             Call us at +917980108976
@@ -173,7 +179,12 @@ const Contact = () => {
             rel="noopener noreferrer"
             className="hover:scale-110 transition-transform"
           >
-            <img src={whatsappImage} alt="WhatsApp" className="h-16" />
+            <img
+              src={whatsappImage}
+              alt="WhatsApp"
+              className="h-16"
+              aria-label="Chat with us"
+            />
           </a>
           <p className="mt-2 text-2xl font-medium text-white">WhatsApp</p>
 
@@ -195,7 +206,12 @@ const Contact = () => {
             rel="noopener noreferrer"
             className="hover:scale-110 transition-transform"
           >
-            <img src={googlemapImage} alt="Google Map" className="h-16" />
+            <img
+              src={googlemapImage}
+              alt="Google Map"
+              className="h-16"
+              aria-label="Visit our location"
+            />
           </a>
           <p className="mt-2 text-2xl font-medium text-white">Visit Us</p>
           <a
@@ -217,7 +233,12 @@ const Contact = () => {
             rel="noopener noreferrer"
             className="hover:scale-110 transition-transform"
           >
-            <img src={facebookImage} alt="Facebook" className="h-16" />
+            <img
+              src={facebookImage}
+              alt="Facebook"
+              className="h-16"
+              aria-label="Visit our Facebook profile"
+            />
           </a>
           <p className="mt-2 text-2xl font-medium text-white">Facebook</p>
           <a
@@ -238,7 +259,12 @@ const Contact = () => {
             rel="noopener noreferrer"
             className="hover:scale-110 transition-transform"
           >
-            <img src={instagramImage} alt="Instagram" className="h-16" />
+            <img
+              src={instagramImage}
+              alt="Instagram"
+              className="h-16"
+              aria-label="Visit our Instagram profile"
+            />
           </a>
           <p className="mt-2 text-2xl font-medium text-white">Instagram</p>
           <a
@@ -259,7 +285,12 @@ const Contact = () => {
             rel="noopener noreferrer"
             className="hover:scale-110 transition-transform"
           >
-            <img src={googleImage} alt="Google" className="h-16" />
+            <img
+              src={googleImage}
+              alt="Google"
+              className="h-16"
+              aria-label="Please give your feedback"
+            />
           </a>
           <p className="mt-2 text-2xl font-medium text-white">Google</p>
           <a
@@ -316,7 +347,7 @@ const Contact = () => {
         </p>
       </div>
       <form
-      ref={form}
+        ref={form}
         onSubmit={handleSubmit}
         className="space-y-6 px-4 sm:px-8 md:px-16 md:mx-5 mx-2"
       >

@@ -68,6 +68,7 @@ const TeamDetails = () => {
           <div className="flex justify-center md:w-1/2">
             <img
               src={member.image}
+              loading="lazy"
               alt={member.name}
               className="w-72 h-72 md:w-96 md:h-96 rounded-lg object-cover shadow-xl"
             />

@@ -11,6 +11,7 @@ const HomeCard = (props) => {
           className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-110 rounded-lg object-contain cursor-pointer"
           // eslint-disable-next-line react/prop-types
           src={props.img}
+          loading = "lazy"
           alt="img"
           onClick={() => setIsOpen(true)} // Open modal on click
         />

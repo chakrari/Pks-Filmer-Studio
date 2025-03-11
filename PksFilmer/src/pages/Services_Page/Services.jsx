@@ -187,6 +187,7 @@ const Services = () => {
               <img
                 src={process.icon}
                 alt={process.title}
+                loading="lazy"
                 className="w-8 h-8 invert text-white"
               />
             </div>

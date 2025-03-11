@@ -14,6 +14,7 @@ const Team = () => {
             {/* Profile Image */}
             <img
               src={team.image}
+              loading="lazy" 
               alt={`Profile picture of ${team.name}, ${team.role}`}
               className="rounded-full shadow-lg mb-4 w-32 h-32 object-cover border-4 border-gray-700"
             />

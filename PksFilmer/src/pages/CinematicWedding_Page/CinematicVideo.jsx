@@ -104,7 +104,10 @@ const CinematicVideo = () => {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 loading="lazy"
-              />
+                referrerPolicy="no-referrer-when-downgrade"
+              >
+                Your browser does not support videos.
+              </iframe>
             </div>
           </div>
         </section>
