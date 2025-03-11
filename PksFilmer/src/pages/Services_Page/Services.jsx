@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import servicePhoto from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/serviceImage.jpg";
-import weddingService from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/weddingServiceImage.jpg";
+import weddingService from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/weddingServiceImage.avif";
 import preweddingService from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/preweddingServiceImage.jpg";
 import kidsService from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/kidsServiceImage.jpg";
 import eventService from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/eventServiceImage.jpg";
-import productService from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/productServiceImage.jpg";
-import portfolioService from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/portfolioServiceImage.jpg";
+import productService from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/productServiceImage.avif";
+import portfolioService from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/portfolioServiceImage.avif";
 import consultation from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/consultation.svg";
 import scout from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/scout.svg";
 import create from "../../assets/Pks_Photos/PKs_Clean_Photos/Services_Photos/create.svg";

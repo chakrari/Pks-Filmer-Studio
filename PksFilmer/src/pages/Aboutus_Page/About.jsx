@@ -1,5 +1,5 @@
 import React from "react";
-import aboutPhoto from "../../assets/Pks_Photos/PKs_Clean_Photos/About_Us/about.jpg";
+import aboutPhoto from "../../assets/Pks_Photos/PKs_Clean_Photos/About_Us/about.avif";
 import CardFlip from "../../components/About_Compo/CardFlip";
 import aboutQuote from "../../assets/Pks_Photos/PKs_Clean_Photos/About_Us/AboutQuote.jpg";
 import aboutImage from "../../assets/Pks_Photos/PKs_Clean_Photos/About_Us/AboutPhoto.jpg";
