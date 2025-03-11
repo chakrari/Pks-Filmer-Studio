@@ -1,7 +1,7 @@
 import React from "react";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import PritamPhoto from "../../assets/Pks_Photos/PKs_Clean_Photos/Team/Edited_Photos/Pritam_Edited.webp";
-import SamirPhoto from "../../assets/Pks_Photos/PKs_Clean_Photos/Team/Edited_Photos/Samir_Edited.webp";
+import AritraPhoto from "../../assets/Pks_Photos/PKs_Clean_Photos/Team/Edited_Photos/Aritra_Edited.png";
 import BhawaniPhoto from "../../assets/Pks_Photos/PKs_Clean_Photos/Team/Edited_Photos/Bhawani_Edited.webp";
 import SubhajitPhoto from "../../assets/Pks_Photos/PKs_Clean_Photos/Team/Edited_Photos/Subhajit_Edited.webp";
 import DebashishPhoto from "../../assets/Pks_Photos/PKs_Clean_Photos/Team/Edited_Photos/Debashish_Edited.webp";
@@ -17,13 +17,13 @@ const teamMembers = [
     instagram: "https://www.instagram.com/pritamkr.shaw/" 
   },
   {
-    name: "Samir Yadav",
+    name: "Aritra Chakraborty",
     role: "CO-FOUNDER & DRONE EXPERT",
     description:
       "An aerial artist adding breathtaking perspectives, this team member makes your love story soar above the rest, capturing stunning views that showcase the beauty of your day from new heights.",
-    image: SamirPhoto,
-    facebook: "https://www.facebook.com/people/Samir-Yadav/pfbid0QJEGJaZc898Q8RtZUkEpJz7BGRfbAVvPCTsb4KPbVpAbmsSsLCSWB58PB18kQTfJl/" ,
-    instagram: "https://www.instagram.com/rahulprince4025/" 
+    image: AritraPhoto,
+    facebook: "https://www.facebook.com/profile.php?id=100006131416359" ,
+    instagram: "https://www.instagram.com/aritra___chakraborty/" 
   },
   {
     name: "Debashish Sahani",

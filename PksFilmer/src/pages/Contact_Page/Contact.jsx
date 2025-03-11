@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
@@ -82,11 +83,11 @@ const Contact = () => {
     
     emailjs
       .sendForm(
-        "service_dmssha8", 
-        "template_lsq2m78", 
+        import.meta.env.VITE_EMAILJS_SERVICE_ID, 
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         form.current, 
         {
-          publicKey: "fZW_G5BIPwtV27E6k",
+          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
         }
       )
       .then(
@@ -410,7 +411,7 @@ const Contact = () => {
             value={formData.message}
             onChange={handleChange}
             rows="4"
-            className="w-full max-w-screen-xl p-2 border border-gray-400 rounded-md bg-gray-100 text-black focus:ring-2 focus:ring-blue-500 mx-auto"
+            className="w-full max-w-screen-2xl p-2 border border-gray-400 rounded-md bg-gray-100 text-black focus:ring-2 focus:ring-blue-500 mx-auto"
             // required
           ></textarea>
         </div>

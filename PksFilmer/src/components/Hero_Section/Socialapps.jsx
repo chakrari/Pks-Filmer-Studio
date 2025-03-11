@@ -30,7 +30,7 @@ const Socialapps = () => {
       // Set a new timeout to hide icons after 2 seconds of inactivity
       scrollTimeout = setTimeout(() => {
         setScrolling(false); // Hide icons after 2 seconds of inactivity
-      }, 2000); // 2000ms = 2 seconds
+      }, 30000); // 2000ms = 2 seconds
 
       // If scrolled back above 300px, hide the icons
       if (window.scrollY <= 300) {

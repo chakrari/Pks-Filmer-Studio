@@ -1,5 +1,5 @@
 import pritamImage from "./assets/Pks_Photos/PKs_Clean_Photos/Team/Pritam.jpeg";
-import samirImage from "./assets/Pks_Photos/PKs_Clean_Photos/Team/Samir.jpeg";
+import aritraImage from "./assets/Pks_Photos/PKs_Clean_Photos/Team/Aritra.jpeg";
 import debasishImage from "./assets/Pks_Photos/PKs_Clean_Photos/Team/Debasish.jpeg";
 import bhawaniImage from "./assets/Pks_Photos/PKs_Clean_Photos/Team/Bhawani.jpeg";
 import subhajitImage from "./assets/Pks_Photos/PKs_Clean_Photos/Team/Subhajit.jpeg";
@@ -15,9 +15,9 @@ export const teams = [
   },
   {
     id: 2,
-    name: "Samir",
-    fullName: "Samir Yadav",
-    image: samirImage,
+    name: "Aritra",
+    fullName: "Aritra Chakraborty",
+    image: aritraImage,
     role: "Co-founder & Drone Expert",
     text: "An aerial artist adding breathtaking perspectives, this team member makes your love story soar above the rest, capturing stunning views that showcase the beauty of your day from new heights.",
   },
