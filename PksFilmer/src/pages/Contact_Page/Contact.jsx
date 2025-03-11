@@ -52,17 +52,6 @@ const Contact = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   // Check if the email matches the regex pattern
-  //   if (!emailRegex.test(formData.email)) {
-  //     alert("Please enter a valid email address.");
-  //     return; // Prevent form submission if email is invalid
-  //   }
-  //   handleModalOpen();
-  // };
-
-
 
  const handleSubmit = (e) => {
     e.preventDefault();
